@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="6/3/2022 8:41:28 PM"
+  DTS:CreationDate="6/3/2022 9:56:14 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-Q8834RJ"
   DTS:CreatorName="DESKTOP-Q8834RJ\riose"
-  DTS:DTSID="{8F590985-C1A5-4E40-B87C-F8E9821FF92B}"
+  DTS:DTSID="{A3E64E72-CE36-4BAC-A375-110641B13DD5}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="8192"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{5158B2FC-9D4F-4D50-90C0-A64DEB925F48}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{30F742B9-E932-46E6-9743-748978DF77C9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{217E81CA-DD01-4F27-B923-7DC727A47277}"
+      DTS:DTSID="{64525F2C-2132-4BBE-B741-76C7170FE1E0}"
       DTS:ObjectName=".\SQLEXPRESS.SSIS_PROJECT_STA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -31,26 +31,26 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{D228A6FE-A914-45FB-B61E-F716F5630528}"
+      DTS:DTSID="{3F8CA53B-5B28-4D4F-88A2-B794B0983244}"
       DTS:ObjectName="Excel Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\riose\OneDrive\Documents\DSTI\DataWarehousing_ETL\GroupProject\Group_Project_Employees.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\riose\OneDrive\Documents\DSTI\DataWarehousing_ETL\GroupProject\US_States.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\DFT - Load into STA Employees"
+      DTS:refId="Package\DFT - Load into STA States"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{82FE88A0-D10A-4C0B-9C1D-5A9D841ED9BB}"
+      DTS:DTSID="{213D34AB-50FE-41D7-944C-F5C1C794B40D}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="DFT - Load into STA Employees"
+      DTS:ObjectName="DFT - Load into STA States"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -58,11 +58,11 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT - Load into STA Employees\EX_SRC - Employees"
+              refId="Package\DFT - Load into STA States\EX_SRC - States"
               componentClassID="Microsoft.ExcelSource"
               contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Excel Source"
-              name="EX_SRC - Employees"
+              name="EX_SRC - States"
               usesDispositions="true"
               version="1">
               <properties>
@@ -73,7 +73,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">Employees_CallCenter$</property>
+                  name="OpenRowset">States$</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -99,7 +99,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load into STA States\EX_SRC - States.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
@@ -107,126 +107,105 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output]"
+                  refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output]"
                   name="Excel Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeID]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[StateCD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[EmployeeID]"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].ExternalColumns[StateCD]"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeID]"
-                      name="EmployeeID"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[StateCD]"
+                      name="StateCD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeName]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[Region]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[EmployeeName]"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].ExternalColumns[Region]"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeName]"
-                      name="EmployeeName"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[Region]"
+                      name="Region"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[Site]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[Name]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[Site]"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].ExternalColumns[Name]"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[Site]"
-                      name="Site"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[ManagerName]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[ManagerName]"
-                      length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[ManagerName]"
-                      name="ManagerName"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[Name]"
+                      name="Name"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[EmployeeID]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].ExternalColumns[StateCD]"
                       dataType="wstr"
                       length="255"
-                      name="EmployeeID" />
+                      name="StateCD" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[EmployeeName]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].ExternalColumns[Name]"
                       dataType="wstr"
                       length="255"
-                      name="EmployeeName" />
+                      name="Name" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[Site]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].ExternalColumns[Region]"
                       dataType="wstr"
                       length="255"
-                      name="Site" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[ManagerName]"
-                      dataType="wstr"
-                      length="255"
-                      name="ManagerName" />
+                      name="Region" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output]"
+                  refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output]"
                   isErrorOut="true"
                   name="Excel Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[EmployeeID]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[StateCD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[EmployeeID]"
-                      name="EmployeeID" />
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[StateCD]"
+                      name="StateCD" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[EmployeeName]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[Region]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[EmployeeName]"
-                      name="EmployeeName" />
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[Region]"
+                      name="Region" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[Site]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[Site]"
-                      name="Site" />
-                    <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ManagerName]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ManagerName]"
-                      name="ManagerName" />
-                    <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Error Output].Columns[Name]"
+                      name="Name" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees"
+              refId="Package\DFT - Load into STA States\OLE_SRC - States"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE_DST - STA_Employees"
+              name="OLE_SRC - States"
               usesDispositions="true"
               version="4">
               <properties>
@@ -237,7 +216,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Employees]</property>
+                  name="OpenRowset">[States]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -279,7 +258,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load into STA States\OLE_SRC - States.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
                   connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
                   description="The OLE DB runtime connection used to access the database."
@@ -287,84 +266,72 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input]"
+                  refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].Columns[EmployeeID]"
+                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].Columns[StateCD]"
                       cachedDataType="wstr"
                       cachedLength="255"
-                      cachedName="EmployeeID"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeID]" />
+                      cachedName="StateCD"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[StateCD]"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[StateCD]" />
                     <inputColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].Columns[EmployeeName]"
+                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].Columns[Region]"
                       cachedDataType="wstr"
                       cachedLength="255"
-                      cachedName="EmployeeName"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeName]"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeName]" />
+                      cachedName="Region"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[Region]" />
                     <inputColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].Columns[Site]"
+                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].Columns[Name]"
                       cachedDataType="wstr"
                       cachedLength="255"
-                      cachedName="Site"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[Site]"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[Site]" />
-                    <inputColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].Columns[ManagerName]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="ManagerName"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[ManagerName]"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[ManagerName]" />
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[Name]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
+                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[StateCD]"
                       dataType="wstr"
                       length="255"
-                      name="EmployeeID" />
+                      name="StateCD" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeName]"
+                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
                       dataType="wstr"
                       length="255"
-                      name="EmployeeName" />
+                      name="Region" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[Site]"
+                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                       dataType="wstr"
                       length="255"
-                      name="Site" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[ManagerName]"
-                      dataType="wstr"
-                      length="255"
-                      name="ManagerName" />
+                      name="Name" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -375,29 +342,29 @@
           </components>
           <paths>
             <path
-              refId="Package\DFT - Load into STA Employees.Paths[Excel Source Output]"
-              endId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input]"
+              refId="Package\DFT - Load into STA States.Paths[Excel Source Output]"
+              endId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input]"
               name="Excel Source Output"
-              startId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output]" />
+              startId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Empty STA Employees"
+      DTS:refId="Package\SQL - Empty STA States"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{963C3776-60A4-40DD-9B47-C53F419206C3}"
+      DTS:DTSID="{A0F5E43B-0FA8-473E-B18F-A1EE7B677A7F}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Empty STA Employees"
+      DTS:ObjectName="SQL - Empty STA States"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{217E81CA-DD01-4F27-B923-7DC727A47277}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE Employees;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{64525F2C-2132-4BBE-B741-76C7170FE1E0}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE States;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -405,11 +372,11 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{49A084F7-F0A8-4E0E-A4C3-5CEDC18FFB32}"
-      DTS:From="Package\SQL - Empty STA Employees"
+      DTS:DTSID="{69ACE9B3-18C8-43DC-973C-E2E1815B1C66}"
+      DTS:From="Package\SQL - Empty STA States"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\DFT - Load into STA Employees" />
+      DTS:To="Package\DFT - Load into STA States" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -424,27 +391,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="229.5,42"
-          Id="Package\DFT - Load into STA Employees"
-          TopLeft="17,157.624999217068" />
+          Size="207.5,42"
+          Id="Package\DFT - Load into STA States"
+          TopLeft="74.5,155.458332561163" />
         <NodeLayout
-          Size="217,42"
-          Id="Package\SQL - Empty STA Employees"
-          TopLeft="20,41.1666664621896" />
+          Size="194.5,42"
+          Id="Package\SQL - Empty STA States"
+          TopLeft="70,43.3333331180943" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="130.125,83.1666664621896">
+          TopLeft="167.25,85.3333331180943">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,74.4583327548784"
+              EndConnector="11,70.1249994430691"
               Start="0,0"
-              End="0,66.9583327548784">
+              End="11,62.6249994430691">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66.9583327548784" />
+                    End="0,31.0624997215345" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.0624997215345"
+                    Point2="0,35.0624997215345"
+                    Point3="4,35.0624997215345" />
+                  <mssgle:LineSegment
+                    End="7,35.0624997215345" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7,35.0624997215345"
+                    Point2="11,35.0624997215345"
+                    Point3="11,39.0624997215345" />
+                  <mssgle:LineSegment
+                    End="11,62.6249994430691" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -457,32 +436,32 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DFT - Load into STA Employees">
+    design-time-name="Package\DFT - Load into STA States">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="214,42"
-          Id="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees"
-          TopLeft="36.5,154.374999233211" />
+          Size="160,42"
+          Id="Package\DFT - Load into STA States\EX_SRC - States"
+          TopLeft="101.5,69.3333329889509" />
         <NodeLayout
-          Size="182,42"
-          Id="Package\DFT - Load into STA Employees\EX_SRC - Employees"
-          TopLeft="49,29.2499998547137" />
+          Size="167,42"
+          Id="Package\DFT - Load into STA States\OLE_SRC - States"
+          TopLeft="105.5,202.583332327091" />
         <EdgeLayout
-          Id="Package\DFT - Load into STA Employees.Paths[Excel Source Output]"
-          TopLeft="141.75,71.2499998547137">
+          Id="Package\DFT - Load into STA States.Paths[Excel Source Output]"
+          TopLeft="185.25,111.333332988951">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,83.124999378497"
+              EndConnector="0,91.2499993381401"
               Start="0,0"
-              End="0,75.624999378497">
+              End="0,83.7499993381401">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,75.624999378497" />
+                    End="0,83.7499993381401" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -495,7 +474,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees">
+    design-time-name="Package\DFT - Load into STA States\EX_SRC - States">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -508,7 +487,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into STA Employees\EX_SRC - Employees">
+    design-time-name="Package\DFT - Load into STA States\OLE_SRC - States">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
