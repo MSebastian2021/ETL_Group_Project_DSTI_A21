@@ -1,7 +1,7 @@
 # ETL_Group_Project_DSTI_A21
 SSIS Group Project for Datawarehousing and ETL
 
-Please ONLY commit your packages, not the project configuration files. Thanks!
+Please ONLY commit your packages (.dstx files), not the project configuration files. Thanks!
 
 The DB scripts to create the Databases and tables are in the <a href="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/tree/main/db_scripts">db_scripts</a> folder.
 
