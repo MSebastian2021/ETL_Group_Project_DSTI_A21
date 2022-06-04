@@ -11,33 +11,21 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{5158B2FC-9D4F-4D50-90C0-A64DEB925F48}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{2AE27743-BF13-429D-864A-4AF76163ED3F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{217E81CA-DD01-4F27-B923-7DC727A47277}"
-      DTS:ObjectName=".\SQLEXPRESS.SSIS_PROJECT_STA">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=SSIS_PROJECT_STA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[EXC - Employees]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{D228A6FE-A914-45FB-B61E-F716F5630528}"
-      DTS:ObjectName="Excel Connection Manager">
+      DTS:DTSID="{99403DD3-9D4C-4B72-BF86-CF30E771CCE8}"
+      DTS:ObjectName="EXC - Employees">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\riose\OneDrive\Documents\DSTI\DataWarehousing_ETL\GroupProject\Group_Project_Employees.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\riose\source\repos\ETL_Group_Project_DSTI_A21\Data\Lookup data.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -58,11 +46,11 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT - Load into STA Employees\EX_SRC - Employees"
+              refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup)"
               componentClassID="Microsoft.ExcelSource"
               contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Excel Source"
-              name="EX_SRC - Employees"
+              name="EX_SRC - Employees (Lookup)"
               usesDispositions="true"
               version="1">
               <properties>
@@ -73,7 +61,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">Employees_CallCenter$</property>
+                  name="OpenRowset">Employees$</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -99,121 +87,121 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[EXC - Employees]"
+                  connectionManagerRefId="Package.ConnectionManagers[EXC - Employees]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output]"
+                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output]"
                   name="Excel Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeID]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[EmployeeID]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[EmployeeID]"
+                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].ExternalColumns[EmployeeID]"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeID]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[EmployeeID]"
                       name="EmployeeID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeName]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[EmployeeName]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[EmployeeName]"
+                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].ExternalColumns[EmployeeName]"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeName]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[EmployeeName]"
                       name="EmployeeName"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[Site]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[Site]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[Site]"
+                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].ExternalColumns[Site]"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[Site]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[Site]"
                       name="Site"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[ManagerName]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[ManagerName]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[ManagerName]"
+                      externalMetadataColumnId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].ExternalColumns[ManagerName]"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[ManagerName]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[ManagerName]"
                       name="ManagerName"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[EmployeeID]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].ExternalColumns[EmployeeID]"
                       dataType="wstr"
                       length="255"
                       name="EmployeeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[EmployeeName]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].ExternalColumns[EmployeeName]"
                       dataType="wstr"
                       length="255"
                       name="EmployeeName" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[Site]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].ExternalColumns[Site]"
                       dataType="wstr"
                       length="255"
                       name="Site" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].ExternalColumns[ManagerName]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].ExternalColumns[ManagerName]"
                       dataType="wstr"
                       length="255"
                       name="ManagerName" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output]"
+                  refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output]"
                   isErrorOut="true"
                   name="Excel Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[EmployeeID]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[EmployeeID]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[EmployeeID]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[EmployeeID]"
                       name="EmployeeID" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[EmployeeName]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[EmployeeName]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[EmployeeName]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[EmployeeName]"
                       name="EmployeeName" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[Site]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[Site]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[Site]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[Site]"
                       name="Site" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ManagerName]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[ManagerName]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ManagerName]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[ManagerName]"
                       name="ManagerName" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -280,8 +268,8 @@
               <connections>
                 <connection
                   refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
+                  connectionManagerID="{217E81CA-DD01-4F27-B923-7DC727A47277}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SSIS_PROJECT_STA]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -299,28 +287,28 @@
                       cachedLength="255"
                       cachedName="EmployeeID"
                       externalMetadataColumnId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeID]" />
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[EmployeeID]" />
                     <inputColumn
                       refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].Columns[EmployeeName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="EmployeeName"
                       externalMetadataColumnId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeName]"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[EmployeeName]" />
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[EmployeeName]" />
                     <inputColumn
                       refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].Columns[Site]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Site"
                       externalMetadataColumnId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[Site]"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[Site]" />
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[Site]" />
                     <inputColumn
                       refId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].Columns[ManagerName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="ManagerName"
                       externalMetadataColumnId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input].ExternalColumns[ManagerName]"
-                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output].Columns[ManagerName]" />
+                      lineageId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output].Columns[ManagerName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -378,7 +366,7 @@
               refId="Package\DFT - Load into STA Employees.Paths[Excel Source Output]"
               endId="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees.Inputs[OLE DB Destination Input]"
               name="Excel Source Output"
-              startId="Package\DFT - Load into STA Employees\EX_SRC - Employees.Outputs[Excel Source Output]" />
+              startId="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup).Outputs[Excel Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -466,23 +454,23 @@
           Id="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees"
           TopLeft="36.5,154.374999233211" />
         <NodeLayout
-          Size="182,42"
-          Id="Package\DFT - Load into STA Employees\EX_SRC - Employees"
-          TopLeft="49,29.2499998547137" />
+          Size="226.5,42"
+          Id="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup)"
+          TopLeft="27.5,35.2083331584516" />
         <EdgeLayout
           Id="Package\DFT - Load into STA Employees.Paths[Excel Source Output]"
-          TopLeft="141.75,71.2499998547137">
+          TopLeft="142.125,77.2083331584516">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,83.124999378497"
+              EndConnector="0,77.1666660747594"
               Start="0,0"
-              End="0,75.624999378497">
+              End="0,69.6666660747594">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,75.624999378497" />
+                    End="0,69.6666660747594" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -508,7 +496,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into STA Employees\EX_SRC - Employees">
+    design-time-name="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup)">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

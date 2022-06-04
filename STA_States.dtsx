@@ -11,33 +11,21 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{EE46A3D0-C96A-42FA-AD5B-38147CD95EA7}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{95A7C04F-1FCD-47BB-A9F8-C2020303D0C4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{64525F2C-2132-4BBE-B741-76C7170FE1E0}"
-      DTS:ObjectName=".\SQLEXPRESS.SSIS_PROJECT_STA">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=SSIS_PROJECT_STA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[EXC - States]"
       DTS:CreationName="EXCEL"
       DTS:DTSID="{3F8CA53B-5B28-4D4F-88A2-B794B0983244}"
-      DTS:ObjectName="Excel Connection Manager">
+      DTS:ObjectName="EXC - States">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\riose\OneDrive\Documents\DSTI\DataWarehousing_ETL\GroupProject\US_States.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\riose\source\repos\ETL_Group_Project_DSTI_A21\Data\US States.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -100,8 +88,8 @@
               <connections>
                 <connection
                   refId="Package\DFT - Load into STA States\EX_SRC - States.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[EXC - States]"
+                  connectionManagerRefId="Package.ConnectionManagers[EXC - States]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -216,7 +204,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[States]</property>
+                  name="OpenRowset">[dbo].[States]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -259,8 +247,8 @@
               <connections>
                 <connection
                   refId="Package\DFT - Load into STA States\OLE_DST - States.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
+                  connectionManagerID="{217E81CA-DD01-4F27-B923-7DC727A47277}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SSIS_PROJECT_STA]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -363,7 +351,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{64525F2C-2132-4BBE-B741-76C7170FE1E0}"
+          SQLTask:Connection="{217E81CA-DD01-4F27-B923-7DC727A47277}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE States;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
