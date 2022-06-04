@@ -5,6 +5,13 @@ Please ONLY commit your packages, not the project configuration files. Thanks!
 
 The DB scripts to create the Databases and tables are in the <a href="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/tree/main/db_scripts">db_scripts</a> folder.
 
+<a href="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/tree/main/Data">Data</a> folder contains all the data files provided in Moodle.
+
+Git commit labels:
+	- chore: non-code related updates (example: update on readme file)
+	- feat: adding new feature or package
+	- refactor: refactoring your package (or somebody elses's)
+
 <hr>
 ISSUES:<br>
 <br>
