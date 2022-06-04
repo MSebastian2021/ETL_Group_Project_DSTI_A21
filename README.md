@@ -21,4 +21,5 @@ ISSUES:<br>
 TODO: 
   - ODS, DWH and Fact packages.
   - Agree on the <a href="https://cloud.smartdraw.com/editor.aspx?templateId=3f4bc78e-eff1-4223-9dda-f429447703d0&flags=128#depoId=35043151&credID=-38873968">Dataflow</a> 
+  <img src="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/blob/main/images/DataFlow.PNG"/>
   - Improve this README file.
