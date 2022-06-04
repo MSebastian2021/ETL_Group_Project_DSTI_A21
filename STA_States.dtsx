@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{30F742B9-E932-46E6-9743-748978DF77C9}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{EE46A3D0-C96A-42FA-AD5B-38147CD95EA7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\riose\OneDrive\Documents\DSTI\DataWarehousing_ETL\GroupProject\US_States.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\riose\OneDrive\Documents\DSTI\DataWarehousing_ETL\GroupProject\US_States.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -201,11 +201,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load into STA States\OLE_SRC - States"
+              refId="Package\DFT - Load into STA States\OLE_DST - States"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE_SRC - States"
+              name="OLE_DST - States"
               usesDispositions="true"
               version="4">
               <properties>
@@ -258,7 +258,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load into STA States\OLE_SRC - States.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load into STA States\OLE_DST - States.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
                   connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
                   description="The OLE DB runtime connection used to access the database."
@@ -266,48 +266,48 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input]"
+                  refId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].Columns[StateCD]"
+                      refId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].Columns[StateCD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="StateCD"
-                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[StateCD]"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].ExternalColumns[StateCD]"
                       lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[StateCD]" />
                     <inputColumn
-                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].Columns[Region]"
+                      refId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].Columns[Region]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Region"
-                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
                       lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[Region]" />
                     <inputColumn
-                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].Columns[Name]"
+                      refId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].Columns[Name]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Name"
-                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      externalMetadataColumnId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                       lineageId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output].Columns[Name]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[StateCD]"
+                      refId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].ExternalColumns[StateCD]"
                       dataType="wstr"
                       length="255"
                       name="StateCD" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
+                      refId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
                       dataType="wstr"
                       length="255"
                       name="Region" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      refId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                       dataType="wstr"
                       length="255"
                       name="Name" />
@@ -316,22 +316,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT - Load into STA States\OLE_DST - States.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into STA States\OLE_DST - States.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into STA States\OLE_DST - States.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into STA States\OLE_DST - States.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into STA States\OLE_SRC - States.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into STA States\OLE_DST - States.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -343,7 +343,7 @@
           <paths>
             <path
               refId="Package\DFT - Load into STA States.Paths[Excel Source Output]"
-              endId="Package\DFT - Load into STA States\OLE_SRC - States.Inputs[OLE DB Destination Input]"
+              endId="Package\DFT - Load into STA States\OLE_DST - States.Inputs[OLE DB Destination Input]"
               name="Excel Source Output"
               startId="Package\DFT - Load into STA States\EX_SRC - States.Outputs[Excel Source Output]" />
           </paths>
@@ -441,16 +441,16 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="165.5,42"
+          Id="Package\DFT - Load into STA States\OLE_DST - States"
+          TopLeft="105.5,202.583332327091" />
+        <NodeLayout
           Size="160,42"
           Id="Package\DFT - Load into STA States\EX_SRC - States"
           TopLeft="101.5,69.3333329889509" />
-        <NodeLayout
-          Size="167,42"
-          Id="Package\DFT - Load into STA States\OLE_SRC - States"
-          TopLeft="105.5,202.583332327091" />
         <EdgeLayout
           Id="Package\DFT - Load into STA States.Paths[Excel Source Output]"
-          TopLeft="185.25,111.333332988951">
+          TopLeft="184.875,111.333332988951">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -487,7 +487,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into STA States\OLE_SRC - States">
+    design-time-name="Package\DFT - Load into STA States\OLE_DST - States">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
