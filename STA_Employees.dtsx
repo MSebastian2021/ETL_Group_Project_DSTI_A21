@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{2AE27743-BF13-429D-864A-4AF76163ED3F}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{FDB52F4D-AD03-49D4-87CA-9291978AEE23}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\riose\source\repos\ETL_Group_Project_DSTI_A21\Data\Lookup data.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\riose\source\repos\ETL_Group_Project_DSTI_A21\Data\Lookup data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -483,7 +483,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees">
+    design-time-name="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup)">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -496,7 +496,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into STA Employees\EX_SRC - Employees (Lookup)">
+    design-time-name="Package\DFT - Load into STA Employees\OLE_DST - STA_Employees">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
