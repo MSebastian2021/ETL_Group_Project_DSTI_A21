@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{21900292-AB77-4D4A-B6FF-9188820D2F38}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{ED70D4D9-2F35-451B-AE63-06341228E04F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\riose\source\repos\ETL_Group_Project_DSTI_A21\Data\Lookup data.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\riose\source\repos\ETL_Group_Project_DSTI_A21\Data\Lookup data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -451,13 +451,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="214.5,42"
-          Id="Package\SQL - Empty STA Call Types"
-          TopLeft="66.5,68.2499996609986" />
-        <NodeLayout
           Size="224.5,42"
           Id="Package\DFT - Load ino STA Call Types"
           TopLeft="88,166.291665840687" />
+        <NodeLayout
+          Size="214.5,42"
+          Id="Package\SQL - Empty STA Call Types"
+          TopLeft="66.5,68.2499996609986" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="173.75,110.249999660999">
@@ -501,39 +501,43 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="173,42"
+          Id="Package\DFT - Load ino STA Call Types\OLE DB Destination"
+          TopLeft="195.5,359.666664880183" />
+        <NodeLayout
           Size="224,42"
           Id="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup)"
-          TopLeft="112.5,73.1249996367842" />
+          TopLeft="112.5,72.583332972808" />
         <NodeLayout
           Size="207.5,42"
           Id="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode"
           TopLeft="204.5,199.333332343234" />
         <EdgeLayout
           Id="Package\DFT - Load ino STA Call Types.Paths[Excel Source Output]"
-          TopLeft="224.5,115.124999636784">
+          TopLeft="224.5,114.583332972808">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="83.75,84.2083327064498"
+              EndConnector="83.75,84.749999370426"
               Start="0,0"
-              End="83.75,76.7083327064498">
+              End="83.75,77.249999370426">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.1041663532249" />
+                    End="0,38.374999685213" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,38.1041663532249"
-                    Point2="0,42.1041663532249"
-                    Point3="4,42.1041663532249" />
+                    Point1="0,38.374999685213"
+                    Point2="0,42.374999685213"
+                    Point3="4,42.374999685213" />
                   <mssgle:LineSegment
-                    End="79.75,42.1041663532249" />
+                    End="79.75,42.374999685213" />
                   <mssgle:CubicBezierSegment
-                    Point1="79.75,42.1041663532249"
-                    Point2="83.75,42.1041663532249"
-                    Point3="83.75,46.1041663532249" />
+                    Point1="79.75,42.374999685213"
+                    Point2="83.75,42.374999685213"
+                    Point3="83.75,46.374999685213" />
                   <mssgle:LineSegment
-                    End="83.75,76.7083327064498" />
+                    End="83.75,77.249999370426" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -542,10 +546,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="173,42"
-          Id="Package\DFT - Load ino STA Call Types\OLE DB Destination"
-          TopLeft="195.5,359.666664880183" />
         <EdgeLayout
           Id="Package\DFT - Load ino STA Call Types.Paths[Data Conversion Output]"
           TopLeft="308.25,241.333332343234">
@@ -584,7 +584,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup)">
+    design-time-name="Package\DFT - Load ino STA Call Types\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -597,7 +597,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load ino STA Call Types\OLE DB Destination">
+    design-time-name="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup)">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
