@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-Q8834RJ"
   DTS:CreatorName="DESKTOP-Q8834RJ\riose"
-  DTS:DTSID="{3D5ABE08-8677-4ECA-BDA1-D9FBB0DED433}"
+  DTS:DTSID="{E39E5E10-C22C-4D33-8790-33FF7DAB698D}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="8192"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="STA_CallChargesPerYear"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{7CF93325-7D73-4279-87A1-F4998B88B4D9}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{03D5D885-8771-4846-8F33-BE8CCF10BD59}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -44,13 +44,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\DFT - Load STA CallCharges"
+      DTS:refId="Package\DFT - Load STA CallChargesPerYear"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{57020F0E-BC79-4C16-B638-CBC19F9829C5}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="DFT - Load STA CallCharges"
+      DTS:ObjectName="DFT - Load STA CallChargesPerYear"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -58,7 +58,7 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows"
+              refId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows"
               componentClassID="Microsoft.ConditionalSplit"
               contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
@@ -66,35 +66,35 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Inputs[Conditional Split Input]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Inputs[Conditional Split Input]"
                   description="Input to the Conditional Split Transformation"
                   name="Conditional Split Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Inputs[Conditional Split Input].Columns[Call Type Key]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Inputs[Conditional Split Input].Columns[Call Type Key]"
                       cachedDataType="r8"
                       cachedName="Call Type Key"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Outputs[Remove NULL rows]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Outputs[Remove NULL rows]"
                   description="Output 1 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Remove NULL rows"
-                  synchronousInputId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Inputs[Conditional Split Input]"
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">[ISNULL](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]})</property>
+                      name="Expression">[ISNULL](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]})</property>
                     <property
                       containsID="true"
                       dataType="System.String"
@@ -109,11 +109,11 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Outputs[Conditional Split Default Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Outputs[Conditional Split Default Output]"
                   description="Default Output of the Conditional Split Transformation"
                   exclusionGroup="1"
                   name="Conditional Split Default Output"
-                  synchronousInputId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Inputs[Conditional Split Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Inputs[Conditional Split Input]">
                   <properties>
                     <property
                       dataType="System.Boolean"
@@ -122,23 +122,23 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output]"
                   description="Error Output of the Conditional Split Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Conditional Split Error Output"
-                  synchronousInputId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Inputs[Conditional Split Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Inputs[Conditional Split Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -147,7 +147,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode"
+              refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
@@ -155,50 +155,50 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Inputs[Data Conversion Input]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Year]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Year]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Year"
-                      lineageId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Type Key]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Type Key]"
                       cachedDataType="r8"
                       cachedName="Call Type Key"
-                      lineageId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Type]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Type]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Type"
-                      lineageId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Charges]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Charges]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges"
-                      lineageId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]"
                       name="Year_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -206,7 +206,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -214,12 +214,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]"
                       name="CallTypeKey_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -227,7 +227,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -235,12 +235,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]"
                       name="CallType_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -248,7 +248,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -256,12 +256,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]"
                       name="CallChargesPerMin_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -269,7 +269,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -280,22 +280,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -304,7 +304,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content"
+              refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
@@ -312,18 +312,18 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Inputs[Derived Column Input]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Inputs[Derived Column Input].Columns[Call Charges (2018)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Inputs[Derived Column Input].Columns[Call Charges (2018)]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges (2018)"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]"
                       truncationRowDisposition="FailComponent"
                       usageType="readWrite">
                       <properties>
@@ -331,7 +331,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[SUBSTRING]([TRIM](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]}),1,[LEN]([TRIM](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]})) - 6)</property>
+                          name="Expression">[SUBSTRING]([TRIM](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]}),1,[LEN]([TRIM](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]})) - 6)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -341,13 +341,13 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Inputs[Derived Column Input].Columns[Call Charges (2019)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Inputs[Derived Column Input].Columns[Call Charges (2019)]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges (2019)"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]"
                       truncationRowDisposition="FailComponent"
                       usageType="readWrite">
                       <properties>
@@ -355,7 +355,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[SUBSTRING]([TRIM](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]}),1,[LEN]([TRIM](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]})) - 6)</property>
+                          name="Expression">[SUBSTRING]([TRIM](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]}),1,[LEN]([TRIM](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]})) - 6)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -365,13 +365,13 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Inputs[Derived Column Input].Columns[Call Charges (2020)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Inputs[Derived Column Input].Columns[Call Charges (2020)]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges (2020)"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]"
                       truncationRowDisposition="FailComponent"
                       usageType="readWrite">
                       <properties>
@@ -379,7 +379,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[SUBSTRING]([TRIM](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]}),1,[LEN]([TRIM](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]})) - 6)</property>
+                          name="Expression">[SUBSTRING]([TRIM](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]}),1,[LEN]([TRIM](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]})) - 6)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -389,13 +389,13 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Inputs[Derived Column Input].Columns[Call Charges (2021)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Inputs[Derived Column Input].Columns[Call Charges (2021)]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges (2021)"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]"
                       truncationRowDisposition="FailComponent"
                       usageType="readWrite">
                       <properties>
@@ -403,7 +403,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[SUBSTRING]([TRIM](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]}),1,[LEN]([TRIM](#{Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]})) - 6)</property>
+                          name="Expression">[SUBSTRING]([TRIM](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]}),1,[LEN]([TRIM](#{Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]})) - 6)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -418,31 +418,31 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Outputs[Derived Column Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Outputs[Derived Column Output]"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   name="Derived Column Output"
-                  synchronousInputId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Inputs[Derived Column Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Outputs[Derived Column Error Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Outputs[Derived Column Error Output]"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Derived Column Error Output"
-                  synchronousInputId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -451,7 +451,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges"
+              refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges"
               componentClassID="Microsoft.ExcelSource"
               contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Excel Source"
@@ -492,7 +492,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[EXL - CallCharges]"
                   connectionManagerRefId="Package.ConnectionManagers[EXL - CallCharges]"
                   description="The OLE DB runtime connection used to access the database."
@@ -500,152 +500,152 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output]"
                   name="Excel Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Type Key]"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]"
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Type Key]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]"
                       name="Call Type Key"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type ]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type ]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Type ]"
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Type ]"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type ]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type ]"
                       name="Call Type "
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2018)]"
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2018)]"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]"
                       name="Call Charges (2018)"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2019)]"
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2019)]"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]"
                       name="Call Charges (2019)"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2020)]"
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2020)]"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]"
                       name="Call Charges (2020)"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2021)]"
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2021)]"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]"
                       name="Call Charges (2021)"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Type Key]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Type Key]"
                       dataType="r8"
                       name="Call Type Key" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Type ]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Type ]"
                       dataType="wstr"
                       length="255"
                       name="Call Type " />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2018)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2018)]"
                       dataType="wstr"
                       length="255"
                       name="Call Charges (2018)" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2019)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2019)]"
                       dataType="wstr"
                       length="255"
                       name="Call Charges (2019)" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2020)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2020)]"
                       dataType="wstr"
                       length="255"
                       name="Call Charges (2020)" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2021)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].ExternalColumns[Call Charges (2021)]"
                       dataType="wstr"
                       length="255"
                       name="Call Charges (2021)" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output]"
                   isErrorOut="true"
                   name="Excel Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Type Key]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Type Key]"
                       dataType="r8"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Type Key]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Type Key]"
                       name="Call Type Key" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Type ]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Type ]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Type ]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Type ]"
                       name="Call Type " />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2018)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2018)]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2018)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2018)]"
                       name="Call Charges (2018)" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2019)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2019)]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2019)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2019)]"
                       name="Call Charges (2019)" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2020)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2020)]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2020)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2020)]"
                       name="Call Charges (2020)" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2021)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2021)]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2021)]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[Call Charges (2021)]"
                       name="Call Charges (2021)" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -654,7 +654,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges"
+              refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -669,7 +669,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[CallCharges]</property>
+                  name="OpenRowset">[CallChargesPerYear]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -711,68 +711,68 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.SSIS_PROJECT_STA]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Connections[OleDbConnection]"
+                  connectionManagerID="{217E81CA-DD01-4F27-B923-7DC727A47277}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SSIS_PROJECT_STA]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[Year_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[Year_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Year_UNI"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]" />
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallTypeKey_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallTypeKey_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallTypeKey_UNI"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]" />
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallType_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallType_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallType_UNI"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]" />
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallChargesPerMin_UNI"
-                      externalMetadataColumnId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
-                      lineageId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]" />
+                      externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
                       dataType="wstr"
                       length="255"
                       name="Year" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
                       dataType="wstr"
                       length="255"
                       name="CallTypeKey" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
                       dataType="wstr"
                       length="255"
                       name="CallType" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
                       dataType="wstr"
                       length="255"
                       name="CallChargesPerMin" />
@@ -781,22 +781,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -805,29 +805,29 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges"
+              refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges"
               componentClassID="Microsoft.UnPivot"
               contactInfo="Unpivot;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Expands an un-normalized data flow into a more normalized version. Values from multiple columns of a single record expand to multiple records in a single column. For example, expand a table that lists athletic scores with a column for each game to more records and a single score column."
               name="UPVT - Unpivot for Yearly Charges">
               <inputs>
                 <input
-                  refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input]"
                   hasSideEffects="true"
                   name="Unpivot Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Charges (2018)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Charges (2018)]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges (2018)"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]">
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2018)]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column's value is not used in output rows."
-                          name="DestinationColumn">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
+                          name="DestinationColumn">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
                         <property
                           dataType="System.String"
                           description="Specifies the value written to the PivotKey column in the output row."
@@ -836,17 +836,17 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Charges (2019)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Charges (2019)]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges (2019)"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]">
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2019)]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column's value is not used in output rows."
-                          name="DestinationColumn">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
+                          name="DestinationColumn">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
                         <property
                           dataType="System.String"
                           description="Specifies the value written to the PivotKey column in the output row."
@@ -855,17 +855,17 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Charges (2020)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Charges (2020)]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges (2020)"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]">
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2020)]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column's value is not used in output rows."
-                          name="DestinationColumn">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
+                          name="DestinationColumn">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
                         <property
                           dataType="System.String"
                           description="Specifies the value written to the PivotKey column in the output row."
@@ -874,17 +874,17 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Charges (2021)]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Charges (2021)]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges (2021)"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]">
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Charges (2021)]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column's value is not used in output rows."
-                          name="DestinationColumn">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
+                          name="DestinationColumn">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]}</property>
                         <property
                           dataType="System.String"
                           description="Specifies the value written to the PivotKey column in the output row."
@@ -893,16 +893,16 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Type Key]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Type Key]"
                       cachedDataType="r8"
                       cachedName="Call Type Key"
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]">
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type Key]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column's value is not used in output rows."
-                          name="DestinationColumn">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]}</property>
+                          name="DestinationColumn">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]}</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the value written to the PivotKey column in the output row."
@@ -911,17 +911,17 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Type ]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input].Columns[Call Type ]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Type "
-                      lineageId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type ]">
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output].Columns[Call Type ]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="The lineage ID of the output column that will receive the value from this input column. Or -1 if column's value is not used in output rows."
-                          name="DestinationColumn">#{Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]}</property>
+                          name="DestinationColumn">#{Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]}</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the value written to the PivotKey column in the output row."
@@ -935,14 +935,14 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output]"
                   name="Unpivot Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]"
                       name="Year">
                       <properties>
                         <property
@@ -952,9 +952,9 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]"
                       dataType="r8"
-                      lineageId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]"
                       name="Call Type Key">
                       <properties>
                         <property
@@ -964,10 +964,10 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]"
                       name="Call Type">
                       <properties>
                         <property
@@ -977,10 +977,10 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Charges]"
                       name="Call Charges">
                       <properties>
                         <property
@@ -997,49 +997,49 @@
           </components>
           <paths>
             <path
-              refId="Package\DFT - Load STA CallCharges.Paths[Conditional Split Default Output]"
-              endId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Inputs[Derived Column Input]"
+              refId="Package\DFT - Load STA CallChargesPerYear.Paths[Conditional Split Default Output]"
+              endId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Inputs[Derived Column Input]"
               name="Conditional Split Default Output"
-              startId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Outputs[Conditional Split Default Output]" />
+              startId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Outputs[Conditional Split Default Output]" />
             <path
-              refId="Package\DFT - Load STA CallCharges.Paths[Data Conversion Output]"
-              endId="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input]"
+              refId="Package\DFT - Load STA CallChargesPerYear.Paths[Data Conversion Output]"
+              endId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
-              startId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Outputs[Data Conversion Output]" />
+              startId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\DFT - Load STA CallCharges.Paths[Derived Column Output]"
-              endId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input]"
+              refId="Package\DFT - Load STA CallChargesPerYear.Paths[Derived Column Output]"
+              endId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input]"
               name="Derived Column Output"
-              startId="Package\DFT - Load STA CallCharges\DER - remove charges columns string content.Outputs[Derived Column Output]" />
+              startId="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content.Outputs[Derived Column Output]" />
             <path
-              refId="Package\DFT - Load STA CallCharges.Paths[Excel Source Output]"
-              endId="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows.Inputs[Conditional Split Input]"
+              refId="Package\DFT - Load STA CallChargesPerYear.Paths[Excel Source Output]"
+              endId="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows.Inputs[Conditional Split Input]"
               name="Excel Source Output"
-              startId="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges.Outputs[Excel Source Output]" />
+              startId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output]" />
             <path
-              refId="Package\DFT - Load STA CallCharges.Paths[Unpivot Output]"
-              endId="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode.Inputs[Data Conversion Input]"
+              refId="Package\DFT - Load STA CallChargesPerYear.Paths[Unpivot Output]"
+              endId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input]"
               name="Unpivot Output"
-              startId="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output]" />
+              startId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Truncate STA CallCharges"
+      DTS:refId="Package\SQL - Truncate STA CallChargesPerYear"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{61EFC4CB-7F0A-419F-8E28-A85CAD084B0D}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Truncate STA CallCharges"
+      DTS:ObjectName="SQL - Truncate STA CallChargesPerYear"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{89A30707-66E6-4CC7-A1D0-739017AA37EC}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE CallCharges;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="TRUNCATE TABLE CallChargesPerYear;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -1048,10 +1048,10 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{88CBF0FA-517D-463E-8084-54F5201EE374}"
-      DTS:From="Package\SQL - Truncate STA CallCharges"
+      DTS:From="Package\SQL - Truncate STA CallChargesPerYear"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\DFT - Load STA CallCharges" />
+      DTS:To="Package\DFT - Load STA CallChargesPerYear" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1066,27 +1066,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="215.5,42"
-          Id="Package\DFT - Load STA CallCharges"
+          Size="254.5,42"
+          Id="Package\DFT - Load STA CallChargesPerYear"
           TopLeft="59.5,155.458332561163" />
         <NodeLayout
-          Size="234.5,42"
-          Id="Package\SQL - Truncate STA CallCharges"
+          Size="273,42"
+          Id="Package\SQL - Truncate STA CallChargesPerYear"
           TopLeft="54,43.3333331180943" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="169.25,85.3333331180943">
+          TopLeft="188.625,85.3333331180943">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,70.1249994430691"
+              EndConnector="0,70.1249994430687"
               Start="0,0"
-              End="0,62.6249994430691">
+              End="0,62.6249994430687">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,62.6249994430691" />
+                    End="0,62.6249994430687" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1099,28 +1099,80 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DFT - Load STA CallCharges">
+    design-time-name="Package\DFT - Load STA CallChargesPerYear">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="207.5,42"
+          Id="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode"
+          TopLeft="77.5,617.708330511012" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\DFT - Load STA CallChargesPerYear\CSPL - Remove NULL rows"
+          TopLeft="77.5,229.124998861924" />
+        <NodeLayout
+          Size="242,42"
+          Id="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges"
+          TopLeft="67.5,490.749997562418" />
+        <NodeLayout
           Size="188,42"
-          Id="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges"
+          Id="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges"
           TopLeft="85.5,85.0416662442602" />
         <NodeLayout
           Size="293,42"
-          Id="Package\DFT - Load STA CallCharges\DER - remove charges columns string content"
+          Id="Package\DFT - Load STA CallChargesPerYear\DER - remove charges columns string content"
           TopLeft="39,369.95833149573" />
         <NodeLayout
-          Size="242,42"
-          Id="Package\DFT - Load STA CallCharges\UPVT - Unpivot for Yearly Charges"
-          TopLeft="67.5,490.749997562418" />
-        <NodeLayout
-          Size="209,42"
-          Id="Package\DFT - Load STA CallCharges\CSPL - Remove NULL rows"
-          TopLeft="77.5,229.124998861924" />
+          Size="217,42"
+          Id="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges"
+          TopLeft="105.5,722.499996803701" />
         <EdgeLayout
-          Id="Package\DFT - Load STA CallCharges.Paths[Derived Column Output]"
+          Id="Package\DFT - Load STA CallChargesPerYear.Paths[Unpivot Output]"
+          TopLeft="184.875,532.749997562418">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84.958332948594"
+              Start="0,0"
+              End="0,77.458332948594">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.458332948594" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load STA CallChargesPerYear.Paths[Excel Source Output]"
+          TopLeft="180.75,127.04166624426">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,102.083332617664"
+              Start="0,0"
+              End="0,94.5833326176637">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,94.5833326176637" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load STA CallChargesPerYear.Paths[Derived Column Output]"
           TopLeft="187,411.95833149573">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1142,83 +1194,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load STA CallCharges.Paths[Conditional Split Default Output]"
-          TopLeft="183.75,271.124998861924">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,98.8333326338067"
-              Start="0,0"
-              End="0,91.3333326338067">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,91.3333326338067" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-70.61390625,39.8375647544033,141.2278125,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load STA CallCharges.Paths[Excel Source Output]"
-          TopLeft="180.75,127.04166624426">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,102.083332617664"
-              Start="0,0"
-              End="0,94.5833326176637">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,94.5833326176637" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="207.5,42"
-          Id="Package\DFT - Load STA CallCharges\DCVN - Convert to Unicode"
-          TopLeft="77.5,617.708330511012" />
-        <EdgeLayout
-          Id="Package\DFT - Load STA CallCharges.Paths[Unpivot Output]"
-          TopLeft="184.875,532.749997562418">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,84.958332948594"
-              Start="0,0"
-              End="0,77.458332948594">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,77.458332948594" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="217,42"
-          Id="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges"
-          TopLeft="105.5,722.499996803701" />
-        <EdgeLayout
-          Id="Package\DFT - Load STA CallCharges.Paths[Data Conversion Output]"
+          Id="Package\DFT - Load STA CallChargesPerYear.Paths[Data Conversion Output]"
           TopLeft="181.25,659.708330511012">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1251,11 +1227,35 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load STA CallChargesPerYear.Paths[Conditional Split Default Output]"
+          TopLeft="183.75,271.124998861924">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,98.8333326338067"
+              Start="0,0"
+              End="0,91.3333326338067">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.3333326338067" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-70.61390625,39.8375647544033,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load STA CallCharges\EX_SRC - CallCharges">
+    design-time-name="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1268,7 +1268,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load STA CallCharges\OLE_DST - STA CallCharges">
+    design-time-name="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
