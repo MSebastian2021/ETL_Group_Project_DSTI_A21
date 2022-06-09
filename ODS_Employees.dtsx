@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{4B1F86F7-082C-4FE7-885B-172559D1D18C}">
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{A147D726-84C3-471E-A08D-99A86B6C6793}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1312,21 +1312,51 @@ where [refTable].[StateCD] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="265,42"
-          Id="Package\DFT - Load into ODS Employees\DER - Split Site into City and StateCode"
-          TopLeft="56,181.45833243202" />
-        <NodeLayout
-          Size="212.5,42"
-          Id="Package\DFT - Load into ODS Employees\OLE_SRC - STA Employees"
-          TopLeft="88,67.1666663330462" />
+          Size="161,42"
+          Id="Package\DFT - Load into ODS Employees\LKP - STA States"
+          TopLeft="106.5,284.916665251471" />
         <NodeLayout
           Size="349.5,42"
           Id="Package\DFT - Load into ODS Employees\DER - Split Employee Name into Firstname and Lastname"
           TopLeft="14,380.416665283756" />
         <NodeLayout
-          Size="161,42"
-          Id="Package\DFT - Load into ODS Employees\LKP - STA States"
-          TopLeft="106.5,284.916665251471" />
+          Size="212.5,42"
+          Id="Package\DFT - Load into ODS Employees\OLE_SRC - STA Employees"
+          TopLeft="88,67.1666663330462" />
+        <NodeLayout
+          Size="358,42"
+          Id="Package\DFT - Load into ODS Employees\DER - Split Manager into Manager Firstname and Lastname"
+          TopLeft="6.5,478.291664290966" />
+        <NodeLayout
+          Size="177.5,42"
+          Id="Package\DFT - Load into ODS Employees\DCNV - Resize fields"
+          TopLeft="102.5,563.333330535226" />
+        <NodeLayout
+          Size="265,42"
+          Id="Package\DFT - Load into ODS Employees\DER - Split Site into City and StateCode"
+          TopLeft="56.5,181.45833243202" />
+        <EdgeLayout
+          Id="Package\DFT - Load into ODS Employees.Paths[OLE DB Source Output]"
+          TopLeft="191.625,109.166666333046">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.2916660989738"
+              Start="0,0"
+              End="0,64.7916660989738">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.7916660989738" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load into ODS Employees.Paths[Lookup Match Output]"
           TopLeft="187.875,326.916665251471">
@@ -1352,19 +1382,19 @@ where [refTable].[StateCD] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into ODS Employees.Paths[Derived Column Output]"
-          TopLeft="187.75,223.45833243202">
+          Id="Package\DFT - Load into ODS Employees.Paths[Derived Column Output2]"
+          TopLeft="188.375,520.291664290966">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61.4583328194508"
+              EndConnector="0,43.0416662442599"
               Start="0,0"
-              End="0,53.9583328194508">
+              End="0,35.5416662442599">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.9583328194508" />
+                    End="0,35.5416662442599" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1373,32 +1403,6 @@ where [refTable].[StateCD] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into ODS Employees.Paths[OLE DB Source Output]"
-          TopLeft="191.375,109.166666333046">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,72.2916660989738"
-              Start="0,0"
-              End="0,64.7916660989738">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.7916660989738" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="358,42"
-          Id="Package\DFT - Load into ODS Employees\DER - Split Manager into Manager Firstname and Lastname"
-          TopLeft="6.5,478.291664290966" />
         <EdgeLayout
           Id="Package\DFT - Load into ODS Employees.Paths[Derived Column Output1]"
           TopLeft="187.125,422.416665283756">
@@ -1421,24 +1425,20 @@ where [refTable].[StateCD] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177.5,42"
-          Id="Package\DFT - Load into ODS Employees\DCNV - Resize fields"
-          TopLeft="102.5,563.333330535226" />
         <EdgeLayout
-          Id="Package\DFT - Load into ODS Employees.Paths[Derived Column Output2]"
-          TopLeft="188.375,520.291664290966">
+          Id="Package\DFT - Load into ODS Employees.Paths[Derived Column Output]"
+          TopLeft="188,223.45833243202">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43.0416662442601"
+              EndConnector="0,61.458332819451"
               Start="0,0"
-              End="0,35.5416662442601">
+              End="0,53.958332819451">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5416662442601" />
+                    End="0,53.958332819451" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1457,14 +1457,14 @@ where [refTable].[StateCD] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,87.4583326903071"
+              EndConnector="0,87.458332690307"
               Start="0,0"
-              End="0,79.9583326903071">
+              End="0,79.958332690307">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,79.9583326903071" />
+                    End="0,79.958332690307" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1501,19 +1501,6 @@ where [refTable].[StateCD] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DFT - Load into ODS Employees\OLE_SRC - STA Employees">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into ODS Employees\OLE_DST - ODS Employees">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
