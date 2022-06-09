@@ -1,0 +1,929 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/9/2022 12:13:27 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-Q8834RJ"
+  DTS:CreatorName="DESKTOP-Q8834RJ\riose"
+  DTS:DTSID="{C908ADD4-CD19-40EC-9C62-D8FCE2CB20A8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="8192"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{A815F78B-932E-4924-A815-6AA277A29AC8}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT - Load into CallChargesPerYear"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{2F80C608-630F-468A-A5CE-E4DB73AB3B54}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT - Load into CallChargesPerYear"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="DCVN - Check CallChargesPerMin type"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input].Columns[CallChargesPerMin]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CallChargesPerMin"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]"
+                      name="CallChargesPerMin_FLOAT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="DCVN - Check CallTypeKey type"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input].Columns[CallTypeKey]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CallTypeKey"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallTypeKey]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]"
+                      dataType="ui2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]"
+                      name="CallTypeKey_INT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallTypeKey]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="DCVN - Check Year type"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input].Columns[Year]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Year"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]"
+                      name="Year_INT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[Year]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="DCVN - Resize CallType"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input].Columns[CallType]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CallType"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallType]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]"
+                      name="CallType_50"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallType]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE_DST - ODS CallChargesPerYear"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[CallChargesPerYear]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Connections[OleDbConnection]"
+                  connectionManagerID="{6CE858F8-3FAA-49BA-89C4-90EFB5B40A04}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SSIS_PROJECT_ODS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallTypeKey_INT]"
+                      cachedDataType="ui2"
+                      cachedName="CallTypeKey_INT"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]" />
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[Year_INT]"
+                      cachedDataType="ui4"
+                      cachedName="Year_INT"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]" />
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin_FLOAT]"
+                      cachedDataType="r4"
+                      cachedName="CallChargesPerMin_FLOAT"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]" />
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallType_50]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CallType_50"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
+                      dataType="i4"
+                      name="CallTypeKey" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="i8"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
+                      dataType="r4"
+                      name="CallChargesPerMin" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
+                      dataType="wstr"
+                      length="50"
+                      name="CallType" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE_SRC - STA CallChargesPerYear"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[CallChargesPerYear]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Connections[OleDbConnection]"
+                  connectionManagerID="{217E81CA-DD01-4F27-B923-7DC727A47277}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SSIS_PROJECT_STA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallTypeKey]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].ExternalColumns[CallTypeKey]"
+                      length="255"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallTypeKey]"
+                      name="CallTypeKey"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].ExternalColumns[CallType]"
+                      length="255"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallType]"
+                      name="CallType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[Year]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                      length="255"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].ExternalColumns[CallChargesPerMin]"
+                      length="255"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]"
+                      name="CallChargesPerMin"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].ExternalColumns[CallTypeKey]"
+                      dataType="wstr"
+                      length="255"
+                      name="CallTypeKey" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].ExternalColumns[CallType]"
+                      dataType="wstr"
+                      length="255"
+                      name="CallType" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                      dataType="wstr"
+                      length="255"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].ExternalColumns[CallChargesPerMin]"
+                      dataType="wstr"
+                      length="255"
+                      name="CallChargesPerMin" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[CallTypeKey]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[CallTypeKey]"
+                      name="CallTypeKey" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[CallType]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[CallType]"
+                      name="CallType" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[Year]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[Year]"
+                      name="Year" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[CallChargesPerMin]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[CallChargesPerMin]"
+                      name="CallChargesPerMin" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input]"
+              name="Data Conversion Output"
+              startId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output1]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input]"
+              name="Data Conversion Output"
+              startId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input]"
+              name="Data Conversion Output"
+              startId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
+              endId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\DFT - Load into CallChargesPerYear.Paths[OLE DB Source Output]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Empty ODS CallChargesPerYear"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C3490683-AAB5-437F-8E20-D6B81BD84832}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Empty ODS CallChargesPerYear"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6CE858F8-3FAA-49BA-89C4-90EFB5B40A04}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE CallChargesPerYear;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{6F6E5506-E5BF-420A-904B-0673652A329B}"
+      DTS:From="Package\SQL - Empty ODS CallChargesPerYear"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\DFT - Load into CallChargesPerYear" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="263.5,42"
+          Id="Package\SQL - Empty ODS CallChargesPerYear"
+          TopLeft="34,46.5833331019514" />
+        <NodeLayout
+          Size="251,42"
+          Id="Package\DFT - Load into CallChargesPerYear"
+          TopLeft="33,166.291665840687" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="162.125,88.5833331019514">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.7083327387356"
+              Start="0,0"
+              End="0,70.2083327387356">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.2083327387356" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT - Load into CallChargesPerYear">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="256.5,42"
+          Id="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear"
+          TopLeft="76.5,67.1666663330462" />
+        <NodeLayout
+          Size="232.5,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type"
+          TopLeft="81,163.583332520806" />
+        <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[OLE DB Source Output]"
+          TopLeft="201,109.166666333046">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.4166661877599"
+              Start="0,0"
+              End="0,46.9166661877599">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.9166661877599" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="195,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type"
+          TopLeft="93,267.041665340256" />
+        <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output]"
+          TopLeft="193.875,205.583332520806">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61.4583328194502"
+              Start="0,0"
+              End="0,53.9583328194502">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.9583328194502" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="264,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type"
+          TopLeft="58.5,412.208331285872" />
+        <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output1]"
+          TopLeft="190.5,309.041665340256">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,103.166665945616"
+              Start="0,0"
+              End="0,95.6666659456161">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,95.6666659456161" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="194.5,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType"
+          TopLeft="94.5,529.749997368703" />
+        <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
+          TopLeft="191.125,454.208331285872">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75.5416660828309"
+              Start="0,0"
+              End="0,68.0416660828309">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.0416660828309" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="258,42"
+          Id="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear"
+          TopLeft="59.5,657.041663403105" />
+        <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
+          TopLeft="190.125,571.749997368703">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85.2916660344019"
+              Start="0,0"
+              End="0,77.7916660344019">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.7916660344019" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
