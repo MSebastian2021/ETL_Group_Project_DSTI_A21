@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="STA_CallChargesPerYear"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{03D5D885-8771-4846-8F33-BE8CCF10BD59}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{9FC96576-E511-4A71-9272-63B16A324AE7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1126,7 +1126,7 @@
         <NodeLayout
           Size="217,42"
           Id="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges"
-          TopLeft="105.5,722.499996803701" />
+          TopLeft="72.5,734.541663499963" />
         <EdgeLayout
           Id="Package\DFT - Load STA CallChargesPerYear.Paths[Unpivot Output]"
           TopLeft="184.875,532.749997562418">
@@ -1195,30 +1195,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load STA CallChargesPerYear.Paths[Data Conversion Output]"
-          TopLeft="181.25,659.708330511012">
+          TopLeft="181.125,659.708330511012">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="32.75,62.7916662926889"
+              EndConnector="0,74.833332988951"
               Start="0,0"
-              End="32.75,55.2916662926889">
+              End="0,67.333332988951">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.3958331463444" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.3958331463444"
-                    Point2="0,31.3958331463444"
-                    Point3="4,31.3958331463444" />
-                  <mssgle:LineSegment
-                    End="28.75,31.3958331463444" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28.75,31.3958331463444"
-                    Point2="32.75,31.3958331463444"
-                    Point3="32.75,35.3958331463444" />
-                  <mssgle:LineSegment
-                    End="32.75,55.2916662926889" />
+                    End="0,67.333332988951" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

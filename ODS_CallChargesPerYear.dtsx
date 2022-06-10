@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{A815F78B-932E-4924-A815-6AA277A29AC8}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{278DC0FB-6C39-4022-8FA8-8E26F916D505}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -32,19 +32,19 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type"
+              refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
-              name="DCVN - Check CallChargesPerMin type"
+              name="DCNV - Check CallChargesPerMin type"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input].Columns[CallChargesPerMin]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input].Columns[CallChargesPerMin]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallChargesPerMin"
@@ -55,17 +55,17 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]"
                       dataType="r4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]"
                       name="CallChargesPerMin_FLOAT"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -84,22 +84,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -108,19 +108,19 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type"
+              refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
-              name="DCVN - Check CallTypeKey type"
+              name="DCNV - Check CallTypeKey type"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input].Columns[CallTypeKey]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Inputs[Data Conversion Input].Columns[CallTypeKey]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallTypeKey"
@@ -131,17 +131,17 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]"
-                      dataType="ui2"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]"
+                      dataType="i1"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]"
                       name="CallTypeKey_INT"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -160,22 +160,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -184,19 +184,19 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type"
+              refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
-              name="DCVN - Check Year type"
+              name="DCNV - Check Year type"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input].Columns[Year]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Inputs[Data Conversion Input].Columns[Year]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Year"
@@ -207,17 +207,17 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]"
-                      dataType="ui4"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]"
                       name="Year_INT"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -236,22 +236,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -260,19 +260,19 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType"
+              refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
-              name="DCVN - Resize CallType"
+              name="DCNV - Resize CallType"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input].Columns[CallType]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input].Columns[CallType]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallType"
@@ -283,18 +283,18 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]"
                       name="CallType_50"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -313,22 +313,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -337,11 +337,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear"
+              refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE_DST - ODS CallChargesPerYear"
+              name="OLE_SRC - ODS CallChargesPerYear"
               usesDispositions="true"
               version="4">
               <properties>
@@ -394,7 +394,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Connections[OleDbConnection]"
                   connectionManagerID="{6CE858F8-3FAA-49BA-89C4-90EFB5B40A04}:external"
                   connectionManagerRefId="Project.ConnectionManagers[SSIS_PROJECT_ODS]"
                   description="The OLE DB runtime connection used to access the database."
@@ -402,78 +402,78 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]"
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallTypeKey_INT]"
-                      cachedDataType="ui2"
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallTypeKey_INT]"
+                      cachedDataType="i1"
                       cachedName="CallTypeKey_INT"
-                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]" />
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Output].Columns[CallTypeKey_INT]" />
                     <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[Year_INT]"
-                      cachedDataType="ui4"
-                      cachedName="Year_INT"
-                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]" />
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin_FLOAT]"
-                      cachedDataType="r4"
-                      cachedName="CallChargesPerMin_FLOAT"
-                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]" />
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallType_50]"
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallType_50]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CallType_50"
-                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]" />
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]" />
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[Year_INT]"
+                      cachedDataType="i4"
+                      cachedName="Year_INT"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]" />
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin_FLOAT]"
+                      cachedDataType="r4"
+                      cachedName="CallChargesPerMin_FLOAT"
+                      externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
-                      dataType="i4"
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
+                      dataType="i2"
                       name="CallTypeKey" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      dataType="i8"
-                      name="Year" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
-                      dataType="r4"
-                      name="CallChargesPerMin" />
-                    <externalMetadataColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
                       dataType="wstr"
                       length="50"
                       name="CallType" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
+                      dataType="r4"
+                      name="CallChargesPerMin" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -657,27 +657,27 @@
           <paths>
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output]"
-              endId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Inputs[Data Conversion Input]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Inputs[Data Conversion Input]"
               name="Data Conversion Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Outputs[Data Conversion Output]" />
+              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Output]" />
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output1]"
-              endId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Inputs[Data Conversion Input]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input]"
               name="Data Conversion Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type.Outputs[Data Conversion Output]" />
+              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Output]" />
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
-              endId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Inputs[Data Conversion Input]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input]"
               name="Data Conversion Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type.Outputs[Data Conversion Output]" />
+              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output]" />
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
-              endId="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]"
+              endId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType.Outputs[Data Conversion Output]" />
+              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output]" />
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[OLE DB Source Output]"
-              endId="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type.Inputs[Data Conversion Input]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Inputs[Data Conversion Input]"
               name="OLE DB Source Output"
               startId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output]" />
           </paths>
@@ -725,13 +725,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="263.5,42"
-          Id="Package\SQL - Empty ODS CallChargesPerYear"
-          TopLeft="34,46.5833331019514" />
-        <NodeLayout
           Size="251,42"
           Id="Package\DFT - Load into CallChargesPerYear"
           TopLeft="33,166.291665840687" />
+        <NodeLayout
+          Size="263.5,42"
+          Id="Package\SQL - Empty ODS CallChargesPerYear"
+          TopLeft="34,46.5833331019514" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="162.125,88.5833331019514">
@@ -767,23 +767,39 @@
           Id="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear"
           TopLeft="76.5,67.1666663330462" />
         <NodeLayout
+          Size="194.5,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType"
+          TopLeft="96,531.916664024608" />
+        <NodeLayout
           Size="232.5,42"
-          Id="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallTypeKey type"
+          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type"
           TopLeft="81,163.583332520806" />
+        <NodeLayout
+          Size="259,42"
+          Id="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear"
+          TopLeft="61,646.749996787558" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type"
+          TopLeft="91.5,267.041665340256" />
+        <NodeLayout
+          Size="264,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type"
+          TopLeft="58.5,412.208331285872" />
         <EdgeLayout
           Id="Package\DFT - Load into CallChargesPerYear.Paths[OLE DB Source Output]"
           TopLeft="201,109.166666333046">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,54.4166661877599"
+              EndConnector="0,54.4166661877598"
               Start="0,0"
-              End="0,46.9166661877599">
+              End="0,46.9166661877598">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.9166661877599" />
+                    End="0,46.9166661877598" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -792,24 +808,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="195,42"
-          Id="Package\DFT - Load into CallChargesPerYear\DCVN - Check Year type"
-          TopLeft="93,267.041665340256" />
         <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output]"
-          TopLeft="193.875,205.583332520806">
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
+          TopLeft="191.875,573.916664024608">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61.4583328194502"
+              EndConnector="0,72.8333327629499"
               Start="0,0"
-              End="0,53.9583328194502">
+              End="0,65.3333327629499">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.9583328194502" />
+                    End="0,65.3333327629499" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -818,24 +830,42 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="264,42"
-          Id="Package\DFT - Load into CallChargesPerYear\DCVN - Check CallChargesPerMin type"
-          TopLeft="58.5,412.208331285872" />
+        <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
+          TopLeft="191.875,454.208331285872">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.708332738736"
+              Start="0,0"
+              End="0,70.208332738736">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.208332738736" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output1]"
-          TopLeft="190.5,309.041665340256">
+          TopLeft="189.75,309.041665340256">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
               EndConnector="0,103.166665945616"
               Start="0,0"
-              End="0,95.6666659456161">
+              End="0,95.666665945616">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,95.6666659456161" />
+                    End="0,95.666665945616" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -844,50 +874,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="194.5,42"
-          Id="Package\DFT - Load into CallChargesPerYear\DCVN - Resize CallType"
-          TopLeft="94.5,529.749997368703" />
         <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
-          TopLeft="191.125,454.208331285872">
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output]"
+          TopLeft="197.25,205.583332520806">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,75.5416660828309"
+              EndConnector="-8.25,61.45833281945"
               Start="0,0"
-              End="0,68.0416660828309">
+              End="-8.25,53.95833281945">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,68.0416660828309" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="258,42"
-          Id="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear"
-          TopLeft="59.5,657.041663403105" />
-        <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
-          TopLeft="190.125,571.749997368703">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,85.2916660344019"
-              Start="0,0"
-              End="0,77.7916660344019">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                    End="0,26.729166409725" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.729166409725"
+                    Point2="0,30.729166409725"
+                    Point3="-4,30.729166409725" />
                   <mssgle:LineSegment
-                    End="0,77.7916660344019" />
+                    End="-4.25,30.729166409725" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.25,30.729166409725"
+                    Point2="-8.25,30.729166409725"
+                    Point3="-8.25,34.729166409725" />
+                  <mssgle:LineSegment
+                    End="-8.25,53.95833281945" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -913,7 +925,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into CallChargesPerYear\OLE_DST - ODS CallChargesPerYear">
+    design-time-name="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
