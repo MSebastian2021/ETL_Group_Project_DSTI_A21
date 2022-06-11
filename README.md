@@ -17,7 +17,6 @@ Git commit labels:
 <a href="https://www.jilaxzone.com/2020/03/20/how-to-load-excel-xlsx-file-using-ssis-on-visual-studio-2019/">Click here</a> to see fix if you've encountered issues importing .xlxs files.
 
 ## TODO: 
-  - ODS, DWH and Fact packages.
   - Verification / Validation on ODS and DWH packages
   - Functional and Technical Rejects table scripts
   - Create project documentation
