@@ -13,7 +13,7 @@ CREATE TABLE [dbo].[Calls](
 	[EmployeeID] [nvarchar](10) NULL,
 	[CallTimestamp] [datetime] NULL,
 	[CallDate] [date] NULL,
-	[CallTime] [time](7) NULL,
+	[CallTime] [time](0) NULL,
 	[CallDurationSec] [int] NULL,
 	[CallChargesPerMin] [real] NULL,
 	[ChargedAmount] [real] NULL,
