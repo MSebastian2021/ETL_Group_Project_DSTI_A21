@@ -1,5 +1,5 @@
 # ETL_Group_Project_DSTI_A21
-SSIS Group Project for Datawarehousing and ETL
+### SSIS Group Project for Datawarehousing and ETL
 
 Please ONLY commit your packages (.dstx files) and db scripts, not the connection properties or project configuration files. Thanks!
 
@@ -12,19 +12,17 @@ Git commit labels:
   - feat: adding new feature or package
   - refactor: refactoring/updating your package (or somebody elses's)
 
-<hr>
-ISSUES:<br>
-<br>
-<a href="https://www.jilaxzone.com/2020/03/20/how-to-load-excel-xlsx-file-using-ssis-on-visual-studio-2019/">Click here</a> to see fix if you've encountered issues importing .xlxs files.
-<hr>
+## ISSUES:<br>
 
-TODO: 
+<a href="https://www.jilaxzone.com/2020/03/20/how-to-load-excel-xlsx-file-using-ssis-on-visual-studio-2019/">Click here</a> to see fix if you've encountered issues importing .xlxs files.
+
+## TODO: 
   - ODS, DWH and Fact packages.
   - Verification / Validation on ODS and DWH packages
   - Functional and Technical Rejects table scripts
+  - Create project documentation
   - Agree on the <a href="https://dstisas-my.sharepoint.com/:u:/g/personal/maria-rosario_sebastian_edu_dsti_institute/EYdrXcORDBZNqqdmAz_RsXIBAvp27WosvK7l-6PsmfQQwA?e=j1zTut">Dataflow</a> 
   <img src="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/blob/main/images/DataFlow8.png"/>
-  - Create project documentation
 
-RESOURCES:
+## RESOURCES:
   - <a href="">Time Dimension table inspiration</a>
