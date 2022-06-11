@@ -20,6 +20,11 @@ ISSUES:<br>
 
 TODO: 
   - ODS, DWH and Fact packages.
-  - Agree on the <a href="https://cloud.smartdraw.com/editor.aspx?templateId=3f4bc78e-eff1-4223-9dda-f429447703d0&flags=128#depoId=35043151&credID=-38873968">Dataflow</a> 
-  <img src="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/blob/main/images/DataFlow7.PNG"/>
-  - Improve this README file.
+  - Verification / Validation on ODS and DWH packages
+  - Functional and Technical Rejects table scripts
+  - Agree on the <a href="https://dstisas-my.sharepoint.com/:u:/g/personal/maria-rosario_sebastian_edu_dsti_institute/EYdrXcORDBZNqqdmAz_RsXIBAvp27WosvK7l-6PsmfQQwA?e=j1zTut">Dataflow</a> 
+  <img src="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/blob/main/images/DataFlow8.PNG"/>
+  - Create project documentation
+
+RESOURCES:
+  - <a href="">Time Dimension table inspiration</a>
