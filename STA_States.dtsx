@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{95A7C04F-1FCD-47BB-A9F8-C2020303D0C4}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{00FCF8D8-B6FB-4FE7-8391-2D641C686C79}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\riose\source\repos\ETL_Group_Project_DSTI_A21\Data\US States.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\riose\source\repos\ETL_Group_Project_DSTI_A21\Data\US States.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -381,37 +381,25 @@
         <NodeLayout
           Size="207.5,42"
           Id="Package\DFT - Load into STA States"
-          TopLeft="74.5,155.458332561163" />
+          TopLeft="57,147.874999265496" />
         <NodeLayout
           Size="194.5,42"
           Id="Package\SQL - Empty STA States"
           TopLeft="70,43.3333331180943" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="167.25,85.3333331180943">
+          TopLeft="164,85.3333331180943">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="11,70.1249994430691"
+              EndConnector="0,62.5416661474022"
               Start="0,0"
-              End="11,62.6249994430691">
+              End="0,55.0416661474022">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.0624997215345" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.0624997215345"
-                    Point2="0,35.0624997215345"
-                    Point3="4,35.0624997215345" />
-                  <mssgle:LineSegment
-                    End="7,35.0624997215345" />
-                  <mssgle:CubicBezierSegment
-                    Point1="7,35.0624997215345"
-                    Point2="11,35.0624997215345"
-                    Point3="11,39.0624997215345" />
-                  <mssgle:LineSegment
-                    End="11,62.6249994430691" />
+                    End="0,55.0416661474022" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -1,7 +1,12 @@
 USE [SSIS_PROJECT_STA]
 GO
 
-/****** Object:  Table [dbo].[Calls]    Script Date: 04/06/2022 15:39:12 ******/
+/****** Object:  Table [dbo].[Calls]    Script Date: 18/06/2022 16:54:35 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Calls]') AND type in (N'U'))
+DROP TABLE [dbo].[Calls]
+GO
+
+/****** Object:  Table [dbo].[Calls]    Script Date: 18/06/2022 16:54:35 ******/
 SET ANSI_NULLS ON
 GO
 

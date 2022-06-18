@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{ED70D4D9-2F35-451B-AE63-06341228E04F}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{79857409-18DD-409E-BBBA-E6AC64CEC5FD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -32,13 +32,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\DFT - Load ino STA Call Types"
+      DTS:refId="Package\DFT - Load ino STA CallTypes"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{88F7D092-C336-4F11-8CB9-129AB017BF2F}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="DFT - Load ino STA Call Types"
+      DTS:ObjectName="DFT - Load ino STA CallTypes"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -46,46 +46,46 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode"
+              refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
-              name="DCVN - Convert to Unicode"
+              name="DCNV - Convert to Unicode"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Inputs[Data Conversion Input]"
+                  refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[CallTypeID]"
+                      refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Inputs[Data Conversion Input].Columns[CallTypeID]"
                       cachedDataType="r8"
                       cachedName="CallTypeID"
-                      lineageId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].Columns[CallTypeID]" />
+                      lineageId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].Columns[CallTypeID]" />
                     <inputColumn
-                      refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[CallTypeLabel]"
+                      refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Inputs[Data Conversion Input].Columns[CallTypeLabel]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallTypeLabel"
-                      lineageId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].Columns[CallTypeLabel]" />
+                      lineageId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].Columns[CallTypeLabel]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Output]"
+                  refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeID_UNI]"
+                      refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeID_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeID_UNI]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeID_UNI]"
                       name="CallTypeID_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -93,7 +93,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].Columns[CallTypeID]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].Columns[CallTypeID]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -101,12 +101,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeLabel_UNI]"
+                      refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeLabel_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeLabel_UNI]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeLabel_UNI]"
                       name="CallTypeLabel_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -114,7 +114,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].Columns[CallTypeLabel]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].Columns[CallTypeLabel]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -125,22 +125,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -149,11 +149,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup)"
+              refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data)"
               componentClassID="Microsoft.ExcelSource"
               contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Excel Source"
-              name="EX_SRC - Call Types (Lookup)"
+              name="EX_SRC - Call Types (Lookup data)"
               usesDispositions="true"
               version="1">
               <properties>
@@ -190,7 +190,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Connections[OleDbConnection]"
+                  refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
@@ -198,68 +198,68 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output]"
+                  refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output]"
                   name="Excel Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].Columns[CallTypeID]"
+                      refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].Columns[CallTypeID]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].ExternalColumns[CallTypeID]"
-                      lineageId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].Columns[CallTypeID]"
+                      externalMetadataColumnId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].ExternalColumns[CallTypeID]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].Columns[CallTypeID]"
                       name="CallTypeID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].Columns[CallTypeLabel]"
+                      refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].Columns[CallTypeLabel]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].ExternalColumns[CallTypeLabel]"
+                      externalMetadataColumnId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].ExternalColumns[CallTypeLabel]"
                       length="255"
-                      lineageId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].Columns[CallTypeLabel]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].Columns[CallTypeLabel]"
                       name="CallTypeLabel"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].ExternalColumns[CallTypeID]"
+                      refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].ExternalColumns[CallTypeID]"
                       dataType="r8"
                       name="CallTypeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output].ExternalColumns[CallTypeLabel]"
+                      refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output].ExternalColumns[CallTypeLabel]"
                       dataType="wstr"
                       length="255"
                       name="CallTypeLabel" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output]"
+                  refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output]"
                   isErrorOut="true"
                   name="Excel Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output].Columns[CallTypeID]"
+                      refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output].Columns[CallTypeID]"
                       dataType="r8"
-                      lineageId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output].Columns[CallTypeID]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output].Columns[CallTypeID]"
                       name="CallTypeID" />
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output].Columns[CallTypeLabel]"
+                      refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output].Columns[CallTypeLabel]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output].Columns[CallTypeLabel]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output].Columns[CallTypeLabel]"
                       name="CallTypeLabel" />
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -268,11 +268,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load ino STA Call Types\OLE DB Destination"
+              refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="OLE_DST STA CallTypes"
               usesDispositions="true"
               version="4">
               <properties>
@@ -325,7 +325,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Connections[OleDbConnection]"
                   connectionManagerID="{217E81CA-DD01-4F27-B923-7DC727A47277}:external"
                   connectionManagerRefId="Project.ConnectionManagers[SSIS_PROJECT_STA]"
                   description="The OLE DB runtime connection used to access the database."
@@ -333,36 +333,36 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CallTypeID_UNI]"
+                      refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input].Columns[CallTypeID_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallTypeID_UNI"
-                      externalMetadataColumnId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeID]"
-                      lineageId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeID_UNI]" />
+                      externalMetadataColumnId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeID]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeID_UNI]" />
                     <inputColumn
-                      refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CallTypeLabel_UNI]"
+                      refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input].Columns[CallTypeLabel_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallTypeLabel_UNI"
-                      externalMetadataColumnId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeLabel]"
-                      lineageId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeLabel_UNI]" />
+                      externalMetadataColumnId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeLabel]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeLabel_UNI]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeID]"
+                      refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeID]"
                       dataType="wstr"
                       length="255"
                       name="CallTypeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeLabel]"
+                      refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeLabel]"
                       dataType="wstr"
                       length="255"
                       name="CallTypeLabel" />
@@ -371,22 +371,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -397,34 +397,34 @@
           </components>
           <paths>
             <path
-              refId="Package\DFT - Load ino STA Call Types.Paths[Data Conversion Output]"
-              endId="Package\DFT - Load ino STA Call Types\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\DFT - Load ino STA CallTypes.Paths[Data Conversion Output]"
+              endId="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
-              startId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Outputs[Data Conversion Output]" />
+              startId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\DFT - Load ino STA Call Types.Paths[Excel Source Output]"
-              endId="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode.Inputs[Data Conversion Input]"
+              refId="Package\DFT - Load ino STA CallTypes.Paths[Excel Source Output]"
+              endId="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode.Inputs[Data Conversion Input]"
               name="Excel Source Output"
-              startId="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup).Outputs[Excel Source Output]" />
+              startId="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data).Outputs[Excel Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\SQL - Empty STA Call Types"
+      DTS:refId="Package\SQL - Empty STA CallTypes"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{9D7C33A2-651A-4946-B592-61E390F0CBA0}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="SQL - Empty STA Call Types"
+      DTS:ObjectName="SQL - Empty STA CallTypes"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{217E81CA-DD01-4F27-B923-7DC727A47277}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE CallTypes" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="TRUNCATE TABLE CallTypes;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -433,10 +433,10 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{A4C490E8-E18A-432F-9E2C-C656415E4795}"
-      DTS:From="Package\SQL - Empty STA Call Types"
+      DTS:From="Package\SQL - Empty STA CallTypes"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\DFT - Load ino STA Call Types" />
+      DTS:To="Package\DFT - Load ino STA CallTypes" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -451,39 +451,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="224.5,42"
-          Id="Package\DFT - Load ino STA Call Types"
-          TopLeft="88,166.291665840687" />
+          Size="221.5,42"
+          Id="Package\DFT - Load ino STA CallTypes"
+          TopLeft="63.5,176.583332456234" />
         <NodeLayout
-          Size="214.5,42"
-          Id="Package\SQL - Empty STA Call Types"
+          Size="211.5,42"
+          Id="Package\SQL - Empty STA CallTypes"
           TopLeft="66.5,68.2499996609986" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="173.75,110.249999660999">
+          TopLeft="173.25,110.249999660999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="26.5,56.0416661796884"
+              EndConnector="0,66.3333327952358"
               Start="0,0"
-              End="26.5,48.5416661796884">
+              End="0,58.8333327952358">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.0208330898442" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.0208330898442"
-                    Point2="0,28.0208330898442"
-                    Point3="4,28.0208330898442" />
-                  <mssgle:LineSegment
-                    End="22.5,28.0208330898442" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.5,28.0208330898442"
-                    Point2="26.5,28.0208330898442"
-                    Point3="26.5,32.0208330898442" />
-                  <mssgle:LineSegment
-                    End="26.5,48.5416661796884" />
+                    End="0,58.8333327952358" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -496,48 +484,36 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DFT - Load ino STA Call Types">
+    design-time-name="Package\DFT - Load ino STA CallTypes">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="173,42"
-          Id="Package\DFT - Load ino STA Call Types\OLE DB Destination"
-          TopLeft="195.5,359.666664880183" />
+          Size="199.5,42"
+          Id="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes"
+          TopLeft="118.5,278.958331947732" />
         <NodeLayout
-          Size="224,42"
-          Id="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup)"
-          TopLeft="112.5,72.583332972808" />
+          Size="247,42"
+          Id="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data)"
+          TopLeft="96.5,69.8749996529271" />
         <NodeLayout
           Size="207.5,42"
-          Id="Package\DFT - Load ino STA Call Types\DCVN - Convert to Unicode"
-          TopLeft="204.5,199.333332343234" />
+          Id="Package\DFT - Load ino STA CallTypes\DCNV - Convert to Unicode"
+          TopLeft="119.5,164.124999184782" />
         <EdgeLayout
-          Id="Package\DFT - Load ino STA Call Types.Paths[Excel Source Output]"
-          TopLeft="224.5,114.583332972808">
+          Id="Package\DFT - Load ino STA CallTypes.Paths[Excel Source Output]"
+          TopLeft="221.625,111.874999652927">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="83.75,84.749999370426"
+              EndConnector="0,52.2499995318553"
               Start="0,0"
-              End="83.75,77.249999370426">
+              End="0,44.7499995318553">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.374999685213" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,38.374999685213"
-                    Point2="0,42.374999685213"
-                    Point3="4,42.374999685213" />
-                  <mssgle:LineSegment
-                    End="79.75,42.374999685213" />
-                  <mssgle:CubicBezierSegment
-                    Point1="79.75,42.374999685213"
-                    Point2="83.75,42.374999685213"
-                    Point3="83.75,46.374999685213" />
-                  <mssgle:LineSegment
-                    End="83.75,77.249999370426" />
+                    End="0,44.7499995318553" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -547,31 +523,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load ino STA Call Types.Paths[Data Conversion Output]"
-          TopLeft="308.25,241.333332343234">
+          Id="Package\DFT - Load ino STA CallTypes.Paths[Data Conversion Output]"
+          TopLeft="220.75,206.124999184782">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-26.25,118.333332536949"
+              EndConnector="0,72.8333327629499"
               Start="0,0"
-              End="-26.25,110.833332536949">
+              End="0,65.3333327629499">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.1666662684745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,55.1666662684745"
-                    Point2="0,59.1666662684745"
-                    Point3="-4,59.1666662684745" />
-                  <mssgle:LineSegment
-                    End="-22.25,59.1666662684745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.25,59.1666662684745"
-                    Point2="-26.25,59.1666662684745"
-                    Point3="-26.25,63.1666662684745" />
-                  <mssgle:LineSegment
-                    End="-26.25,110.833332536949" />
+                    End="0,65.3333327629499" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -584,7 +548,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load ino STA Call Types\OLE DB Destination">
+    design-time-name="Package\DFT - Load ino STA CallTypes\OLE_DST STA CallTypes">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -597,7 +561,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load ino STA Call Types\EX_SRC - Call Types (Lookup)">
+    design-time-name="Package\DFT - Load ino STA CallTypes\EX_SRC - Call Types (Lookup data)">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

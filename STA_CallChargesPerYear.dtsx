@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="STA_CallChargesPerYear"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{9FC96576-E511-4A71-9272-63B16A324AE7}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{64D43BDC-A51B-4031-BED0-173683EDBB6D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -147,36 +147,36 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode"
+              refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
-              name="DCVN - Convert to Unicode"
+              name="DCNV - Convert to Unicode"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Year]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Inputs[Data Conversion Input].Columns[Year]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Year"
                       lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Year]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Type Key]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Type Key]"
                       cachedDataType="r8"
                       cachedName="Call Type Key"
                       lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type Key]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Type]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Type]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Type"
                       lineageId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output].Columns[Call Type]" />
                     <inputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Charges]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Inputs[Data Conversion Input].Columns[Call Charges]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Call Charges"
@@ -187,18 +187,18 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]"
                       name="Year_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -214,12 +214,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]"
                       name="CallTypeKey_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -235,12 +235,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]"
                       name="CallType_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -256,12 +256,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="255"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]"
                       name="CallChargesPerMin_UNI"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -280,22 +280,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -731,28 +731,28 @@
                       cachedLength="255"
                       cachedName="Year_UNI"
                       externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[Year_UNI]" />
                     <inputColumn
                       refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallTypeKey_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallTypeKey_UNI"
                       externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallTypeKey_UNI]" />
                     <inputColumn
                       refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallType_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallType_UNI"
                       externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallType_UNI]" />
                     <inputColumn
                       refId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin_UNI]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallChargesPerMin_UNI"
                       externalMetadataColumnId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
-                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]" />
+                      lineageId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output].Columns[CallChargesPerMin_UNI]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1005,7 +1005,7 @@
               refId="Package\DFT - Load STA CallChargesPerYear.Paths[Data Conversion Output]"
               endId="Package\DFT - Load STA CallChargesPerYear\OLE_DST - STA CallCharges.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
-              startId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Outputs[Data Conversion Output]" />
+              startId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Outputs[Data Conversion Output]" />
             <path
               refId="Package\DFT - Load STA CallChargesPerYear.Paths[Derived Column Output]"
               endId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Inputs[Unpivot Input]"
@@ -1018,7 +1018,7 @@
               startId="Package\DFT - Load STA CallChargesPerYear\EX_SRC - CallCharges.Outputs[Excel Source Output]" />
             <path
               refId="Package\DFT - Load STA CallChargesPerYear.Paths[Unpivot Output]"
-              endId="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode.Inputs[Data Conversion Input]"
+              endId="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode.Inputs[Data Conversion Input]"
               name="Unpivot Output"
               startId="Package\DFT - Load STA CallChargesPerYear\UPVT - Unpivot for Yearly Charges.Outputs[Unpivot Output]" />
           </paths>
@@ -1105,7 +1105,7 @@
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="207.5,42"
-          Id="Package\DFT - Load STA CallChargesPerYear\DCVN - Convert to Unicode"
+          Id="Package\DFT - Load STA CallChargesPerYear\DCNV - Convert to Unicode"
           TopLeft="77.5,617.708330511012" />
         <NodeLayout
           Size="209,42"
@@ -1199,14 +1199,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,74.833332988951"
+              EndConnector="0,74.8333329889509"
               Start="0,0"
-              End="0,67.333332988951">
+              End="0,67.3333329889509">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,67.333332988951" />
+                    End="0,67.3333329889509" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
