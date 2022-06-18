@@ -1,7 +1,12 @@
 USE [SSIS_PROJECT_DWH]
 GO
 
-/****** Object:  Table [dbo].[DimCallChargesPerYear]    Script Date: 11/06/2022 20:56:34 ******/
+/****** Object:  Table [dbo].[DimCallChargesPerYear]    Script Date: 18/06/2022 22:04:58 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[DimCallChargesPerYear]') AND type in (N'U'))
+DROP TABLE [dbo].[DimCallChargesPerYear]
+GO
+
+/****** Object:  Table [dbo].[DimCallChargesPerYear]    Script Date: 18/06/2022 22:04:58 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -19,4 +24,5 @@ CREATE TABLE [dbo].[DimCallChargesPerYear](
 	[EndDate] [datetime] NULL
 ) ON [PRIMARY]
 GO
+
 

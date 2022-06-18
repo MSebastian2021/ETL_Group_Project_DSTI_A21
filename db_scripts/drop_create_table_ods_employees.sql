@@ -1,7 +1,12 @@
 USE [SSIS_PROJECT_ODS]
 GO
 
-/****** Object:  Table [dbo].[Employees]    Script Date: 06/06/2022 17:43:13 ******/
+/****** Object:  Table [dbo].[Employees]    Script Date: 18/06/2022 22:09:58 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Employees]') AND type in (N'U'))
+DROP TABLE [dbo].[Employees]
+GO
+
+/****** Object:  Table [dbo].[Employees]    Script Date: 18/06/2022 22:09:58 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -20,5 +25,4 @@ CREATE TABLE [dbo].[Employees](
 	[Region] [nvarchar](20) NULL
 ) ON [PRIMARY]
 GO
-
 

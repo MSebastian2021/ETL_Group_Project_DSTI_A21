@@ -1,7 +1,12 @@
 USE [SSIS_PROJECT_DWH]
 GO
 
-/****** Object:  Table [dbo].[DimDate]    Script Date: 11/06/2022 20:56:24 ******/
+/****** Object:  Table [dbo].[DimDate]    Script Date: 18/06/2022 22:07:12 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[DimDate]') AND type in (N'U'))
+DROP TABLE [dbo].[DimDate]
+GO
+
+/****** Object:  Table [dbo].[DimDate]    Script Date: 18/06/2022 22:07:12 ******/
 SET ANSI_NULLS ON
 GO
 
