@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="DWH_DimCallChargesPerYear"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{DB1BEDC7-E474-4C6D-99BF-22354036B3FE}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{171190AB-C686-476D-93E7-EA1FCDC3F50F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -32,19 +32,19 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim"
+              refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear"
               componentClassID="Microsoft.UnionAll"
               contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
-              name="ALL - Dim"
+              name="ALL - DimCallChargesPerYear"
               version="1">
               <inputs>
                 <input
-                  refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 1]"
+                  refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 1]"
                   name="Union All Input 1">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 1].Columns[CallTypeKey]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 1].Columns[CallTypeKey]"
                       cachedDataType="i2"
                       cachedName="CallTypeKey"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallTypeKey]">
@@ -53,11 +53,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallTypeKey]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallTypeKey]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 1].Columns[Year]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 1].Columns[Year]"
                       cachedDataType="i4"
                       cachedName="Year"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear.Outputs[OLE DB Source Output].Columns[Year]">
@@ -66,11 +66,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[Year]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[Year]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 1].Columns[CallChargesPerMin]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 1].Columns[CallChargesPerMin]"
                       cachedDataType="r4"
                       cachedName="CallChargesPerMin"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]">
@@ -79,11 +79,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallChargesPerMin]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 1].Columns[CallType]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 1].Columns[CallType]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CallType"
@@ -93,11 +93,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallType]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallType]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 1].Columns[CurrentDate]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 1].Columns[CurrentDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="CurrentDate"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\DER - CurrentDate &amp; CurrentFlag.Outputs[Derived Column Output].Columns[CurrentDate]">
@@ -106,11 +106,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentDate]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentDate]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 1].Columns[CurrentFlag]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 1].Columns[CurrentFlag]"
                       cachedDataType="i4"
                       cachedName="CurrentFlag"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\DER - CurrentDate &amp; CurrentFlag.Outputs[Derived Column Output].Columns[CurrentFlag]">
@@ -119,19 +119,19 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentFlag]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentFlag]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 2]"
+                  refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 2]"
                   hasSideEffects="true"
                   name="Union All Input 2">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 2].Columns[CallTypeKey]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 2].Columns[CallTypeKey]"
                       cachedDataType="i2"
                       cachedName="CallTypeKey"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallTypeKey]">
@@ -140,11 +140,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallTypeKey]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallTypeKey]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 2].Columns[Year]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 2].Columns[Year]"
                       cachedDataType="i4"
                       cachedName="Year"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear.Outputs[OLE DB Source Output].Columns[Year]">
@@ -153,11 +153,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[Year]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[Year]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 2].Columns[CallChargesPerMin]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 2].Columns[CallChargesPerMin]"
                       cachedDataType="r4"
                       cachedName="CallChargesPerMin"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]">
@@ -166,11 +166,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallChargesPerMin]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 2].Columns[CallType]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 2].Columns[CallType]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CallType"
@@ -180,11 +180,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallType]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallType]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 2].Columns[CurrentDate]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 2].Columns[CurrentDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="CurrentDate"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\DER - CurrentDate &amp; CurrentFlag.Outputs[Derived Column Output].Columns[CurrentDate]">
@@ -193,11 +193,11 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentDate]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentDate]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 2].Columns[CurrentFlag]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 2].Columns[CurrentFlag]"
                       cachedDataType="i4"
                       cachedName="CurrentFlag"
                       lineageId="Package\DFT - Load ODS CallChargesPerYear\DER - CurrentDate &amp; CurrentFlag.Outputs[Derived Column Output].Columns[CurrentFlag]">
@@ -206,14 +206,14 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentFlag]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentFlag]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 3]"
+                  refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 3]"
                   dangling="true"
                   hasSideEffects="true"
                   name="Union All Input 3">
@@ -222,39 +222,39 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1]"
+                  refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1]"
                   name="Union All Output 1">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallTypeKey]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallTypeKey]"
                       dataType="i2"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallTypeKey]"
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallTypeKey]"
                       name="CallTypeKey" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[Year]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[Year]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[Year]"
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[Year]"
                       name="Year" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
                       dataType="r4"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
                       name="CallChargesPerMin" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallType]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallType]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallType]"
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallType]"
                       name="CallType" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentDate]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentDate]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentDate]"
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentDate]"
                       name="CurrentDate" />
                     <outputColumn
-                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentFlag]"
+                      refId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentFlag]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentFlag]"
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentFlag]"
                       name="CurrentFlag" />
                   </outputColumns>
                   <externalMetadataColumns />
@@ -898,38 +898,38 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
                       cachedDataType="i2"
                       cachedName="CallTypeKey"
                       externalMetadataColumnId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallTypeKey]"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallTypeKey]" />
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallTypeKey]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].Columns[Year]"
                       cachedDataType="i4"
                       cachedName="Year"
                       externalMetadataColumnId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[Year]" />
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[Year]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin]"
                       cachedDataType="r4"
                       cachedName="CallChargesPerMin"
                       externalMetadataColumnId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallChargesPerMin]" />
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallType]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CallType"
                       externalMetadataColumnId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CallType]" />
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CallType]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CurrentFlag]"
                       cachedDataType="i4"
                       cachedName="CurrentFlag"
                       externalMetadataColumnId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CurrentFlag]"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentFlag]" />
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentFlag]" />
                     <inputColumn
                       refId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CurrentDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="CurrentDate"
                       externalMetadataColumnId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
-                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1].Columns[CurrentDate]" />
+                      lineageId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1].Columns[CurrentDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1176,12 +1176,12 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
               startId="Package\DFT - Load ODS CallChargesPerYear\LKP - Any changes?.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\DFT - Load ODS CallChargesPerYear.Paths[Lookup No Match Output1]"
-              endId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 1]"
+              endId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 1]"
               name="Lookup No Match Output"
               startId="Package\DFT - Load ODS CallChargesPerYear\LKP - CallChargePerYear exists?.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\DFT - Load ODS CallChargesPerYear.Paths[OLE DB Command Output]"
-              endId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Inputs[Union All Input 2]"
+              endId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Inputs[Union All Input 2]"
               name="OLE DB Command Output"
               startId="Package\DFT - Load ODS CallChargesPerYear\CMD - Update DimCallChargesPerYear.Outputs[OLE DB Command Output]" />
             <path
@@ -1193,7 +1193,7 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
               refId="Package\DFT - Load ODS CallChargesPerYear.Paths[Union All Output 1]"
               endId="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear.Inputs[OLE DB Destination Input]"
               name="Union All Output 1"
-              startId="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim.Outputs[Union All Output 1]" />
+              startId="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear.Outputs[Union All Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1224,13 +1224,33 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="234.5,42"
+          Id="Package\DFT - Load ODS CallChargesPerYear\LKP - CallChargePerYear exists?"
+          TopLeft="73,261.624998700495" />
+        <NodeLayout
           Size="235.5,42"
           Id="Package\DFT - Load ODS CallChargesPerYear\DER - CurrentDate &amp; CurrentFlag"
           TopLeft="70,139.749999305854" />
         <NodeLayout
+          Size="251,42"
+          Id="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear"
+          TopLeft="65.5,498.874997522061" />
+        <NodeLayout
+          Size="264,42"
+          Id="Package\DFT - Load ODS CallChargesPerYear\CMD - Update DimCallChargesPerYear"
+          TopLeft="377,392.166664718754" />
+        <NodeLayout
+          Size="222,42"
+          Id="Package\DFT - Load ODS CallChargesPerYear\ALL - DimCallChargesPerYear"
+          TopLeft="84,395.41666470261" />
+        <NodeLayout
           Size="285,42"
           Id="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear"
           TopLeft="43.5,36.291666486404" />
+        <NodeLayout
+          Size="174.5,42"
+          Id="Package\DFT - Load ODS CallChargesPerYear\LKP - Any changes?"
+          TopLeft="422,262.166665364471" />
         <EdgeLayout
           Id="Package\DFT - Load ODS CallChargesPerYear.Paths[OLE DB Source Output]"
           TopLeft="186.875,78.291666486404">
@@ -1253,24 +1273,20 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="234.5,42"
-          Id="Package\DFT - Load ODS CallChargesPerYear\LKP - CallChargePerYear exists?"
-          TopLeft="73,261.624998700495" />
         <EdgeLayout
-          Id="Package\DFT - Load ODS CallChargesPerYear.Paths[Derived Column Output]"
-          TopLeft="189,181.749999305854">
+          Id="Package\DFT - Load ODS CallChargesPerYear.Paths[OLE DB Command Output]"
+          TopLeft="377,414.791664710682">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,79.8749993946405"
+              EndConnector="-71,0"
               Start="0,0"
-              End="0,72.3749993946405">
+              End="-63.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,72.3749993946405" />
+                    End="-63.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1279,38 +1295,30 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174.5,42"
-          Id="Package\DFT - Load ODS CallChargesPerYear\LKP - Any changes?"
-          TopLeft="422,262.166665364471" />
         <EdgeLayout
-          Id="Package\DFT - Load ODS CallChargesPerYear.Paths[Lookup Match Output]"
-          TopLeft="307.5,282.895832032483">
+          Id="Package\DFT - Load ODS CallChargesPerYear.Paths[Lookup No Match Output1]"
+          TopLeft="192.625,303.624998700495">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="114.5,0"
+              EndConnector="0,91.7916660021155"
               Start="0,0"
-              End="107,0">
+              End="0,84.2916660021155">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="107,0" />
+                    End="0,84.2916660021155" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="5.30861328125,5,96.3827734375,11.609375"
+              BoundingBox="-55.80638671875,36.3411455010578,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="264,42"
-          Id="Package\DFT - Load ODS CallChargesPerYear\CMD - Update DimCallChargesPerYear"
-          TopLeft="377,392.166664718754" />
         <EdgeLayout
           Id="Package\DFT - Load ODS CallChargesPerYear.Paths[Lookup No Match Output]"
           TopLeft="509.125,304.166665364471">
@@ -1335,48 +1343,44 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="125.5,42"
-          Id="Package\DFT - Load ODS CallChargesPerYear\ALL - Dim"
-          TopLeft="130.5,397.041664694539" />
         <EdgeLayout
-          Id="Package\DFT - Load ODS CallChargesPerYear.Paths[Lookup No Match Output1]"
-          TopLeft="191.75,303.624998700495">
+          Id="Package\DFT - Load ODS CallChargesPerYear.Paths[Lookup Match Output]"
+          TopLeft="307.5,282.895832032483">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,93.4166659940448"
+              EndConnector="114.5,0"
               Start="0,0"
-              End="0,85.9166659940448">
+              End="107,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,85.9166659940448" />
+                    End="107,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,37.1536454970224,111.6127734375,11.609375"
+              BoundingBox="5.30861328125,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load ODS CallChargesPerYear.Paths[OLE DB Command Output]"
-          TopLeft="377,415.604164706647">
+          Id="Package\DFT - Load ODS CallChargesPerYear.Paths[Derived Column Output]"
+          TopLeft="189,181.749999305854">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-121,0"
+              EndConnector="0,79.8749993946405"
               Start="0,0"
-              End="-113.5,0">
+              End="0,72.3749993946405">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-113.5,0" />
+                    End="0,72.3749993946405" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1385,24 +1389,20 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="251,42"
-          Id="Package\DFT - Load ODS CallChargesPerYear\OLE_DST - DimCallChargesPerYear"
-          TopLeft="65.5,498.874997522061" />
         <EdgeLayout
           Id="Package\DFT - Load ODS CallChargesPerYear.Paths[Union All Output 1]"
-          TopLeft="192.125,439.041664694539">
+          TopLeft="193,437.41666470261">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.8333328275219"
+              EndConnector="0,61.4583328194505"
               Start="0,0"
-              End="0,52.3333328275219">
+              End="0,53.9583328194505">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.3333328275219" />
+                    End="0,53.9583328194505" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1415,25 +1415,12 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\DFT - Load ODS CallChargesPerYear\LKP - CallChargePerYear exists?">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1443,30 +1430,7 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load ODS CallChargesPerYear\LKP - Any changes?">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimCallChargesPerYear]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1483,6 +1447,42 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load ODS CallChargesPerYear\OLE_SRC - Load ODS CallChargesPerYear">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load ODS CallChargesPerYear\LKP - Any changes?">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimCallChargesPerYear]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

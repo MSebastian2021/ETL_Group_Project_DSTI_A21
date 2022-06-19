@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{AAE174F6-E2C2-40AA-8C74-6F10CF1453A6}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{BDF91162-BE9A-4B1F-91E3-2DB73C212B02}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1670,13 +1670,55 @@ where [refTable].[EmployeeID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="214.5,42"
+          Id="Package\DFT - Load into DimEmployees\OLE_SRC - ODS Employees"
+          TopLeft="69.5,35.2083331584516" />
+        <NodeLayout
+          Size="219.5,42"
+          Id="Package\DFT - Load into DimEmployees\CMD - Update DimEmployees"
+          TopLeft="391,351.54166492054" />
+        <NodeLayout
           Size="246,42"
           Id="Package\DFT - Load into DimEmployees\DER - CurrentDate and CurrentFlag"
           TopLeft="58.5,129.999999354283" />
         <NodeLayout
-          Size="214.5,42"
-          Id="Package\DFT - Load into DimEmployees\OLE_SRC - ODS Employees"
-          TopLeft="69.5,35.2083331584516" />
+          Size="206.5,42"
+          Id="Package\DFT - Load into DimEmployees\OLE_DST - DimEmployees"
+          TopLeft="70.5,480.999997610847" />
+        <NodeLayout
+          Size="179.5,42"
+          Id="Package\DFT - Load into DimEmployees\LKP - Any Changes ?"
+          TopLeft="407,228.041665533971" />
+        <NodeLayout
+          Size="177.5,42"
+          Id="Package\DFT - Load into DimEmployees\ALL - DimEmployees"
+          TopLeft="91.5,354.249998240421" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\DFT - Load into DimEmployees\LKP - Employee exists?"
+          TopLeft="89.5,231.833332181805" />
+        <EdgeLayout
+          Id="Package\DFT - Load into DimEmployees.Paths[Union All Output 1]"
+          TopLeft="177,396.249998240421">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84.7499993704259"
+              Start="0,0"
+              End="0,77.2499993704259">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.2499993704259" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load into DimEmployees.Paths[OLE DB Source Output]"
           TopLeft="179.125,77.2083331584516">
@@ -1699,24 +1741,20 @@ where [refTable].[EmployeeID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="190,42"
-          Id="Package\DFT - Load into DimEmployees\LKP - Employee exists?"
-          TopLeft="89.5,231.833332181805" />
         <EdgeLayout
-          Id="Package\DFT - Load into DimEmployees.Paths[Derived Column Output]"
-          TopLeft="183,171.999999354283">
+          Id="Package\DFT - Load into DimEmployees.Paths[OLE DB Command Output]"
+          TopLeft="391,373.895831580481">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.8333328275217"
+              EndConnector="-122,0"
               Start="0,0"
-              End="0,52.3333328275217">
+              End="-114.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.3333328275217" />
+                    End="-114.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1725,66 +1763,6 @@ where [refTable].[EmployeeID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="179.5,42"
-          Id="Package\DFT - Load into DimEmployees\LKP - Any Changes ?"
-          TopLeft="407,228.041665533971" />
-        <EdgeLayout
-          Id="Package\DFT - Load into DimEmployees.Paths[Lookup Match Output]"
-          TopLeft="279.5,250.937498857888">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="127.5,0"
-              Start="0,0"
-              End="120,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="120,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="11.80861328125,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="219.5,42"
-          Id="Package\DFT - Load into DimEmployees\CMD - Update DimEmployees"
-          TopLeft="391,351.54166492054" />
-        <EdgeLayout
-          Id="Package\DFT - Load into DimEmployees.Paths[Lookup No Match Output]"
-          TopLeft="498.75,270.041665533971">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,81.4999993865689"
-              Start="0,0"
-              End="0,73.9999993865689">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,73.9999993865689" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,31.1953121932845,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="177.5,42"
-          Id="Package\DFT - Load into DimEmployees\ALL - DimEmployees"
-          TopLeft="91.5,354.249998240421" />
         <EdgeLayout
           Id="Package\DFT - Load into DimEmployees.Paths[Lookup No Match Output1]"
           TopLeft="182.375,273.833332181805">
@@ -1810,45 +1788,67 @@ where [refTable].[EmployeeID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into DimEmployees.Paths[OLE DB Command Output]"
-          TopLeft="391,373.895831580481">
+          Id="Package\DFT - Load into DimEmployees.Paths[Lookup No Match Output]"
+          TopLeft="498.75,270.041665533971">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-122,0"
+              EndConnector="0,81.4999993865689"
               Start="0,0"
-              End="-114.5,0">
+              End="0,73.9999993865689">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-114.5,0" />
+                    End="0,73.9999993865689" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,31.1953121932845,111.6127734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="206.5,42"
-          Id="Package\DFT - Load into DimEmployees\OLE_DST - DimEmployees"
-          TopLeft="70.5,480.999997610847" />
         <EdgeLayout
-          Id="Package\DFT - Load into DimEmployees.Paths[Union All Output 1]"
-          TopLeft="177,396.249998240421">
+          Id="Package\DFT - Load into DimEmployees.Paths[Lookup Match Output]"
+          TopLeft="279.5,250.937498857888">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,84.7499993704259"
+              EndConnector="127.5,0"
               Start="0,0"
-              End="0,77.2499993704259">
+              End="120,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,77.2499993704259" />
+                    End="120,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="11.80861328125,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into DimEmployees.Paths[Derived Column Output]"
+          TopLeft="183,171.999999354283">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.8333328275217"
+              Start="0,0"
+              End="0,52.3333328275217">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.3333328275217" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1874,25 +1874,15 @@ where [refTable].[EmployeeID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into DimEmployees\LKP - Employee exists?">
+    design-time-name="Package\DFT - Load into DimEmployees\OLE_DST - DimEmployees">
     <Properties>
       <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimEmployees]</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -1920,15 +1910,25 @@ where [refTable].[EmployeeID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into DimEmployees\OLE_DST - DimEmployees">
+    design-time-name="Package\DFT - Load into DimEmployees\LKP - Employee exists?">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimEmployees]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

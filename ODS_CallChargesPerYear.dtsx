@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="56"
-  DTS:VersionGUID="{DBF98F16-2266-4DB9-9F35-928114D02AC6}">
+  DTS:VersionBuild="58"
+  DTS:VersionGUID="{1694913A-6408-44A5-A34F-B1A86557D943}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2043,10 +2043,6 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="264,42"
-          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type"
-          TopLeft="58.5,412.208331285872" />
-        <NodeLayout
           Size="186,42"
           Id="Package\DFT - Load into CallChargesPerYear\DER - Error Info (Year)"
           TopLeft="505,267.749999176711" />
@@ -2067,10 +2063,6 @@
           Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type"
           TopLeft="68,162.499999192854" />
         <NodeLayout
-          Size="239,42"
-          Id="Package\DFT - Load into CallChargesPerYear\OLE_DST - STA TechnicalRejects"
-          TopLeft="1068.5,272.124999184782" />
-        <NodeLayout
           Size="255,42"
           Id="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin)"
           TopLeft="506.5,412.374998458351" />
@@ -2079,13 +2071,21 @@
           Id="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear"
           TopLeft="60,64.9999996771415" />
         <NodeLayout
-          Size="135.5,42"
-          Id="Package\DFT - Load into CallChargesPerYear\ALL - Errors"
-          TopLeft="853,269.958332528877" />
+          Size="239,42"
+          Id="Package\DFT - Load into CallChargesPerYear\OLE_DST - STA TechnicalRejects"
+          TopLeft="1068.5,272.124999184782" />
         <NodeLayout
           Size="195,42"
           Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type"
           TopLeft="91,268.124998668208" />
+        <NodeLayout
+          Size="135.5,42"
+          Id="Package\DFT - Load into CallChargesPerYear\ALL - Errors"
+          TopLeft="853,269.958332528877" />
+        <NodeLayout
+          Size="264,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type"
+          TopLeft="58.5,412.208331285872" />
         <EdgeLayout
           Id="Package\DFT - Load into CallChargesPerYear.Paths[Union All Output 1]"
           TopLeft="988.5,292.041665856829">
@@ -2100,28 +2100,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="72.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[OLE DB Source Output]"
-          TopLeft="186.25,106.999999677142">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55.4999995157123"
-              Start="0,0"
-              End="0,47.9999995157123">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.9999995157123" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2221,6 +2199,28 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
+          TopLeft="186.375,204.499999192854">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.6249994753541"
+              Start="0,0"
+              End="0,56.1249994753541">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.1249994753541" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
           TopLeft="191.625,573.374997360632">
           <EdgeLayout.Curve>
@@ -2287,6 +2287,30 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Error Output2]"
+          TopLeft="300.5,179.979165877009">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="207.5,0"
+              Start="0,0"
+              End="200,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="200,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="33.91361328125,5,132.1727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Error Output1]"
           TopLeft="322.5,433.291664872111">
           <EdgeLayout.Curve>
@@ -2335,49 +2359,25 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
-          TopLeft="186.375,204.499999192854">
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[OLE DB Source Output]"
+          TopLeft="186.25,106.999999677142">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63.6249994753541"
+              EndConnector="0,55.4999995157123"
               Start="0,0"
-              End="0,56.1249994753541">
+              End="0,47.9999995157123">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,56.1249994753541" />
+                    End="0,47.9999995157123" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Error Output2]"
-          TopLeft="300.5,179.979165877009">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="207.5,0"
-              Start="0,0"
-              End="200,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="200,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="33.91361328125,5,132.1727734375,11.43359375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2397,7 +2397,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into CallChargesPerYear\OLE_DST - STA TechnicalRejects">
+    design-time-name="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2410,7 +2410,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear">
+    design-time-name="Package\DFT - Load into CallChargesPerYear\OLE_DST - STA TechnicalRejects">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

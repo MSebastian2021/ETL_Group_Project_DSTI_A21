@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-Q8834RJ</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA5z21Iq0Xwk6FL8owLNff3gAAAAACAAAAAAAQZgAAAAEAACAAAAAujg/NJVSXX5Ys2zrB8W20kH8CWzbZx0PISqun3g6otAAAAAAOgAAAAAIAACAAAAC3dPIDbHEIxEk/PVyVZaZrGsRGsQ4Ae3eeKVrt3I9CLJAAAABe6nxzcu93xLE/HXnys77IoaD6wP9TE6MgEGGCl76WooR1NPV4V610yr06tikBFM75v52tHfwkmx0RhRmmy37bRATayitdBH5EJNk1BvjSUTuEDGNUE8SGoxbViT9iZ4y0piyap4nu90Qwxk/0KQ+HH0sEaD/uvu797mSEzSrd/rrxQt2xYXLx+BcXDx8s4wxAAAAAPzU9kq7KKfa7XGApppWMEDP+KRYMU35aHof0ID/FKHmVakwgIRAurDljn98p6vIThBOtziWOPEWowKpt7OTu/A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA5z21Iq0Xwk6FL8owLNff3gAAAAACAAAAAAAQZgAAAAEAACAAAABP79SawiaXf2P4495Nx2QD8lr7MBajay3aPY+wGd7AeAAAAAAOgAAAAAIAACAAAABXlmJ6NMoAurp1ls3WPhuCQtgKhR2A40zpddjaGsrXsZAAAAB8YLcckysgf91I8kSUgFUmiULtKTdOdIWDi3edZzElHoHViXlq8xc6/frN0m7pXOvGI5G4KN5zt2GsP+DdRMrScJaCYT0DZ5hR+hWr24FLM9QoXQ8Gdp9NH5bTC/zwBFjXa2UZph7xwd4le0EVBcHsMl9AjgZngkMFuW2vhc59fS80yLe0rFpZrjOV7oI0H8VAAAAA1VPSCvYM2RIBfpPN/BttWpa9wU4aburLj14FPFqpFhKD5t+FUFt69E5O09J5tFcMCDuamWSsQW32vW9TS1HcbA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -41,6 +41,8 @@
           <SSIS:Package SSIS:Name="DWH_DimEmployees.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="DWH_DimCallChargesPerYear.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="DWH_FactCalls.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="ODS_CallTypes.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="DWH_DimCallTypes.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="SSIS_PROJECT_STA.conmgr" />
@@ -1783,10 +1785,10 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">28</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">56</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{278DC0FB-6C39-4022-8FA8-8E26F916D505}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DBF98F16-2266-4DB9-9F35-928114D02AC6}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2098,10 +2100,10 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">11</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{AAE174F6-E2C2-40AA-8C74-6F10CF1453A6}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BDF91162-BE9A-4B1F-91E3-2DB73C212B02}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2264,10 +2266,10 @@
                 <SSIS:Property SSIS:Name="Name">DWH_DimCallChargesPerYear</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{DB1BEDC7-E474-4C6D-99BF-22354036B3FE}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{171190AB-C686-476D-93E7-EA1FCDC3F50F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2285,6 +2287,40 @@
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionGUID">{9D6FE394-4169-4687-BD46-EFA5CCCAE1FC}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="ODS_CallTypes.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{4CE514CD-8C3B-444C-AC3D-837277826B1C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{13647FE7-2F3E-4D23-B7E3-3EAAB5F664FD}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="DWH_DimCallTypes.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{85F70E48-B0C6-496F-9867-23B3954CDB87}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">18</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{FCAECC6F-345C-447B-8BA7-89A70AE598A0}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
