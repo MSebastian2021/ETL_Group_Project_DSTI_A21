@@ -17,7 +17,7 @@ CREATE TABLE [dbo].[DimCallChargesPerYear](
 	[CallChargesPerYearKey] [int] IDENTITY(1,1) NOT NULL,
 	[CallTypeKey] [smallint] NULL,
 	[Year] [int] NULL,
-	[CallChargesPerMin] [real] NULL,
+	[CallChargesPerMin] [nvarchar](10) NULL,
 	[CallType] [nvarchar](50) NULL,
 	[CurrentFlag] [tinyint] NULL,
 	[StartDate] [datetime] NULL,

@@ -16,7 +16,7 @@ GO
 CREATE TABLE [dbo].[CallChargesPerYear](
 	[CallTypeKey] [smallint] NULL,
 	[Year] [int] NULL,
-	[CallChargesPerMin] [real] NULL,
+	[CallChargesPerMin] [nvarchar](10) NULL,
 	[CallType] [nvarchar](50) NULL
 ) ON [PRIMARY]
 GO

@@ -22,7 +22,7 @@ CREATE TABLE [dbo].[Calls](
 	[CallTime] [time](0) NULL,
 	[CallDurationSec] [int] NULL,
 	[CallDurationMin] [numeric](10, 2) NULL,
-	[CallChargesPerMin] [numeric](10, 2) NULL,
+	[CallChargesPerMin] [nvarchar](10) NULL,
 	[ChargedAmount] [numeric](10, 2) NULL,
 	[WaitTime] [int] NULL,
 	[SLA] [bit] NULL,

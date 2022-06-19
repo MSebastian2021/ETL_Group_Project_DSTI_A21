@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="88"
-  DTS:VersionGUID="{70234C41-3A5C-41DF-8E5A-8F5A5AE5992C}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{BA4F3123-2A4A-4808-9CCF-54784753F595}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -389,10 +389,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Inputs[Union All Input 1].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -625,10 +624,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Inputs[Union All Input 2].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -813,11 +811,10 @@
                       scale="2" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      dataType="numeric"
+                      dataType="wstr"
+                      length="10"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      name="CallChargesPerMin" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Outputs[Union All Output 1].Columns[ChargedAmount]"
                       dataType="numeric"
@@ -978,10 +975,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Inputs[Union All Input 1].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -1175,10 +1171,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Inputs[Union All Input 2].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -1324,11 +1319,10 @@
                       scale="2" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      dataType="numeric"
+                      dataType="wstr"
+                      length="10"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      name="CallChargesPerMin" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[ChargedAmount]"
                       dataType="numeric"
@@ -1474,10 +1468,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Inputs[Union All Input 1].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -1684,10 +1677,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Inputs[Union All Input 2].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -1846,11 +1838,10 @@
                       scale="2" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      dataType="numeric"
+                      dataType="wstr"
+                      length="10"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      name="CallChargesPerMin" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[ChargedAmount]"
                       dataType="numeric"
@@ -2001,10 +1992,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Inputs[Union All Input 1].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -2250,10 +2240,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Inputs[Union All Input 2].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -2438,11 +2427,10 @@
                       scale="2" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      dataType="numeric"
+                      dataType="wstr"
+                      length="10"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      name="CallChargesPerMin" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Outputs[Union All Output 1].Columns[ChargedAmount]"
                       dataType="numeric"
@@ -2608,10 +2596,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Inputs[Union All Input 1].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -2831,10 +2818,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Inputs[Union All Input 2].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -3006,11 +2992,10 @@
                       scale="2" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      dataType="numeric"
+                      dataType="wstr"
+                      length="10"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      name="CallChargesPerMin" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[ChargedAmount]"
                       dataType="numeric"
@@ -3074,7 +3059,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[CallType]"
                       cachedDataType="i2"
                       cachedName="CallType"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallType]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallType]">
                       <properties>
                         <property
                           containsID="true"
@@ -3088,7 +3073,7 @@
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="EmployeeID"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[EmployeeID]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[EmployeeID]">
                       <properties>
                         <property
                           containsID="true"
@@ -3101,7 +3086,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[CallTimestamp]"
                       cachedDataType="dbTimeStamp"
                       cachedName="CallTimestamp"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallTimestamp]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallTimestamp]">
                       <properties>
                         <property
                           containsID="true"
@@ -3114,7 +3099,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[CallDate]"
                       cachedDataType="dbDate"
                       cachedName="CallDate"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallDate]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallDate]">
                       <properties>
                         <property
                           containsID="true"
@@ -3127,7 +3112,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[CallTime]"
                       cachedDataType="dbTime2"
                       cachedName="CallTime"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallTime]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallTime]">
                       <properties>
                         <property
                           containsID="true"
@@ -3140,7 +3125,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[CallDurationSec]"
                       cachedDataType="i4"
                       cachedName="CallDurationSec"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallDurationSec]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallDurationSec]">
                       <properties>
                         <property
                           containsID="true"
@@ -3155,7 +3140,7 @@
                       cachedName="CallDurationMin"
                       cachedPrecision="10"
                       cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallDurationMin]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallDurationMin]">
                       <properties>
                         <property
                           containsID="true"
@@ -3166,11 +3151,10 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
                           containsID="true"
@@ -3185,7 +3169,7 @@
                       cachedName="ChargedAmount"
                       cachedPrecision="10"
                       cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[ChargedAmount]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[ChargedAmount]">
                       <properties>
                         <property
                           containsID="true"
@@ -3198,7 +3182,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[WaitTime]"
                       cachedDataType="i4"
                       cachedName="WaitTime"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[WaitTime]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[WaitTime]">
                       <properties>
                         <property
                           containsID="true"
@@ -3211,7 +3195,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[SLA]"
                       cachedDataType="bool"
                       cachedName="SLA"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[SLA]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[SLA]">
                       <properties>
                         <property
                           containsID="true"
@@ -3224,7 +3208,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[CallAbandoned]"
                       cachedDataType="bool"
                       cachedName="CallAbandoned"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallAbandoned]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallAbandoned]">
                       <properties>
                         <property
                           containsID="true"
@@ -3234,10 +3218,23 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[Year]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[Year]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[CallDateKey]"
                       cachedDataType="i4"
                       cachedName="CallDateKey"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallDateKey]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallDateKey]">
                       <properties>
                         <property
                           containsID="true"
@@ -3247,10 +3244,23 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[TimeKey]"
+                      cachedDataType="i4"
+                      cachedName="TimeKey"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[TimeKey]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[TimeKey]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[RejectDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="RejectDate"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectDate]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectDate]">
                       <properties>
                         <property
                           containsID="true"
@@ -3262,9 +3272,9 @@
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[RejectType]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="25"
                       cachedName="RejectType"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectType]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectType]">
                       <properties>
                         <property
                           containsID="true"
@@ -3276,9 +3286,9 @@
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[RejectColumn]"
                       cachedDataType="wstr"
-                      cachedLength="8"
+                      cachedLength="10"
                       cachedName="RejectColumn"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectColumn]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectColumn]">
                       <properties>
                         <property
                           containsID="true"
@@ -3290,9 +3300,9 @@
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1].Columns[RejectDetails]"
                       cachedDataType="wstr"
-                      cachedLength="91"
+                      cachedLength="58"
                       cachedName="RejectDetails"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectDetails]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectDetails]">
                       <properties>
                         <property
                           containsID="true"
@@ -3306,7 +3316,7 @@
                       cachedDataType="wstr"
                       cachedLength="46"
                       cachedName="RejectStep"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectStep]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectStep]">
                       <properties>
                         <property
                           containsID="true"
@@ -3327,7 +3337,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[CallType]"
                       cachedDataType="i2"
                       cachedName="CallType"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallType]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallType]">
                       <properties>
                         <property
                           containsID="true"
@@ -3341,7 +3351,7 @@
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="EmployeeID"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[EmployeeID]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[EmployeeID]">
                       <properties>
                         <property
                           containsID="true"
@@ -3354,7 +3364,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[CallTimestamp]"
                       cachedDataType="dbTimeStamp"
                       cachedName="CallTimestamp"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallTimestamp]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallTimestamp]">
                       <properties>
                         <property
                           containsID="true"
@@ -3367,7 +3377,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[CallDate]"
                       cachedDataType="dbDate"
                       cachedName="CallDate"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallDate]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallDate]">
                       <properties>
                         <property
                           containsID="true"
@@ -3380,7 +3390,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[CallTime]"
                       cachedDataType="dbTime2"
                       cachedName="CallTime"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallTime]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallTime]">
                       <properties>
                         <property
                           containsID="true"
@@ -3393,7 +3403,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[CallDurationSec]"
                       cachedDataType="i4"
                       cachedName="CallDurationSec"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallDurationSec]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallDurationSec]">
                       <properties>
                         <property
                           containsID="true"
@@ -3408,7 +3418,7 @@
                       cachedName="CallDurationMin"
                       cachedPrecision="10"
                       cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallDurationMin]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallDurationMin]">
                       <properties>
                         <property
                           containsID="true"
@@ -3419,11 +3429,10 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
                           containsID="true"
@@ -3438,7 +3447,7 @@
                       cachedName="ChargedAmount"
                       cachedPrecision="10"
                       cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[ChargedAmount]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[ChargedAmount]">
                       <properties>
                         <property
                           containsID="true"
@@ -3451,7 +3460,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[WaitTime]"
                       cachedDataType="i4"
                       cachedName="WaitTime"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[WaitTime]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[WaitTime]">
                       <properties>
                         <property
                           containsID="true"
@@ -3464,7 +3473,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[SLA]"
                       cachedDataType="bool"
                       cachedName="SLA"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[SLA]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[SLA]">
                       <properties>
                         <property
                           containsID="true"
@@ -3477,7 +3486,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[CallAbandoned]"
                       cachedDataType="bool"
                       cachedName="CallAbandoned"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallAbandoned]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallAbandoned]">
                       <properties>
                         <property
                           containsID="true"
@@ -3487,10 +3496,23 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[Year]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[Year]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[CallDateKey]"
                       cachedDataType="i4"
                       cachedName="CallDateKey"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1].Columns[CallDateKey]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallDateKey]">
                       <properties>
                         <property
                           containsID="true"
@@ -3500,10 +3522,23 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[TimeKey]"
+                      cachedDataType="i4"
+                      cachedName="TimeKey"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[TimeKey]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[TimeKey]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[RejectDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="RejectDate"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectDate]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectDate]">
                       <properties>
                         <property
                           containsID="true"
@@ -3513,17 +3548,17 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[RejectDetails]"
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[RejectColumn]"
                       cachedDataType="wstr"
-                      cachedLength="58"
-                      cachedName="RejectDetails"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectDetails]">
+                      cachedLength="8"
+                      cachedName="RejectColumn"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectColumn]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectDetails]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectColumn]}</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -3531,7 +3566,7 @@
                       cachedDataType="wstr"
                       cachedLength="46"
                       cachedName="RejectStep"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectStep]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectStep]">
                       <properties>
                         <property
                           containsID="true"
@@ -3543,9 +3578,9 @@
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[RejectType]"
                       cachedDataType="wstr"
-                      cachedLength="25"
+                      cachedLength="34"
                       cachedName="RejectType"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectType]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectType]">
                       <properties>
                         <property
                           containsID="true"
@@ -3555,17 +3590,17 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[RejectColumn]"
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2].Columns[RejectDetails]"
                       cachedDataType="wstr"
-                      cachedLength="10"
-                      cachedName="RejectColumn"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output].Columns[RejectColumn]">
+                      cachedLength="65"
+                      cachedName="RejectDetails"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectDetails]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectColumn]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectDetails]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -3580,7 +3615,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[CallType]"
                       cachedDataType="i2"
                       cachedName="CallType"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallType]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallType]">
                       <properties>
                         <property
                           containsID="true"
@@ -3594,7 +3629,7 @@
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="EmployeeID"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[EmployeeID]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[EmployeeID]">
                       <properties>
                         <property
                           containsID="true"
@@ -3607,7 +3642,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[CallTimestamp]"
                       cachedDataType="dbTimeStamp"
                       cachedName="CallTimestamp"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallTimestamp]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallTimestamp]">
                       <properties>
                         <property
                           containsID="true"
@@ -3620,7 +3655,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[CallDate]"
                       cachedDataType="dbDate"
                       cachedName="CallDate"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallDate]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallDate]">
                       <properties>
                         <property
                           containsID="true"
@@ -3633,7 +3668,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[CallTime]"
                       cachedDataType="dbTime2"
                       cachedName="CallTime"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallTime]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallTime]">
                       <properties>
                         <property
                           containsID="true"
@@ -3646,7 +3681,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[CallDurationSec]"
                       cachedDataType="i4"
                       cachedName="CallDurationSec"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallDurationSec]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallDurationSec]">
                       <properties>
                         <property
                           containsID="true"
@@ -3661,7 +3696,7 @@
                       cachedName="CallDurationMin"
                       cachedPrecision="10"
                       cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallDurationMin]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallDurationMin]">
                       <properties>
                         <property
                           containsID="true"
@@ -3672,11 +3707,10 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallChargesPerMin]">
                       <properties>
                         <property
                           containsID="true"
@@ -3691,7 +3725,7 @@
                       cachedName="ChargedAmount"
                       cachedPrecision="10"
                       cachedScale="2"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[ChargedAmount]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[ChargedAmount]">
                       <properties>
                         <property
                           containsID="true"
@@ -3704,7 +3738,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[WaitTime]"
                       cachedDataType="i4"
                       cachedName="WaitTime"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[WaitTime]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[WaitTime]">
                       <properties>
                         <property
                           containsID="true"
@@ -3717,7 +3751,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[SLA]"
                       cachedDataType="bool"
                       cachedName="SLA"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[SLA]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[SLA]">
                       <properties>
                         <property
                           containsID="true"
@@ -3730,7 +3764,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[CallAbandoned]"
                       cachedDataType="bool"
                       cachedName="CallAbandoned"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallAbandoned]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallAbandoned]">
                       <properties>
                         <property
                           containsID="true"
@@ -3740,10 +3774,23 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[Year]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[Year]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[CallDateKey]"
                       cachedDataType="i4"
                       cachedName="CallDateKey"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallDateKey]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1].Columns[CallDateKey]">
                       <properties>
                         <property
                           containsID="true"
@@ -3756,7 +3803,7 @@
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[RejectDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="RejectDate"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectDate]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectDate]">
                       <properties>
                         <property
                           containsID="true"
@@ -3766,11 +3813,25 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[RejectType]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="RejectType"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectType]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectType]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[RejectColumn]"
                       cachedDataType="wstr"
                       cachedLength="8"
                       cachedName="RejectColumn"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectColumn]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectColumn]">
                       <properties>
                         <property
                           containsID="true"
@@ -3780,25 +3841,11 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[RejectDetails]"
-                      cachedDataType="wstr"
-                      cachedLength="65"
-                      cachedName="RejectDetails"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectDetails]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectDetails]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[RejectStep]"
                       cachedDataType="wstr"
                       cachedLength="46"
                       cachedName="RejectStep"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectStep]">
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectStep]">
                       <properties>
                         <property
                           containsID="true"
@@ -3808,17 +3855,17 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[RejectType]"
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3].Columns[RejectDetails]"
                       cachedDataType="wstr"
-                      cachedLength="34"
-                      cachedName="RejectType"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output].Columns[RejectType]">
+                      cachedLength="91"
+                      cachedName="RejectDetails"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output].Columns[RejectDetails]">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectType]}</property>
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectDetails]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -3925,10 +3972,9 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 4].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]">
                       <properties>
                         <property
@@ -3993,6 +4039,19 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 4].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].Columns[Year]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[Year]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 4].Columns[RejectDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="RejectDate"
@@ -4034,20 +4093,6 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 4].Columns[RejectDetails]"
-                      cachedDataType="wstr"
-                      cachedLength="91"
-                      cachedName="RejectDetails"
-                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo(CallDate).Outputs[Derived Column Output].Columns[RejectDetails]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectDetails]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 4].Columns[RejectStep]"
                       cachedDataType="wstr"
                       cachedLength="46"
@@ -4059,6 +4104,20 @@
                           dataType="System.Int32"
                           description="Output column lineage ID"
                           name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectStep]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 4].Columns[RejectDetails]"
+                      cachedDataType="wstr"
+                      cachedLength="91"
+                      cachedName="RejectDetails"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo(CallDate).Outputs[Derived Column Output].Columns[RejectDetails]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectDetails]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -4117,11 +4176,10 @@
                       scale="2" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      dataType="numeric"
+                      dataType="wstr"
+                      length="10"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[CallChargesPerMin]"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      name="CallChargesPerMin" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[ChargedAmount]"
                       dataType="numeric"
@@ -4145,10 +4203,20 @@
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[CallAbandoned]"
                       name="CallAbandoned" />
                     <outputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[Year]"
+                      name="Year" />
+                    <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[CallDateKey]"
                       dataType="i4"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[CallDateKey]"
                       name="CallDateKey" />
+                    <outputColumn
+                      refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[TimeKey]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[TimeKey]"
+                      name="TimeKey" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1].Columns[RejectDate]"
                       dataType="dbTimeStamp"
@@ -5294,7 +5362,7 @@ where [refTable].[CallTypeKey] = ? and [refTable].[Year] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[CallType]};#{Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1].Columns[Year]};</property>
+                  name="ParameterMap">#{Package\DFT - Load into FactCalls (Method 2)\454:invalid};#{Package\DFT - Load into FactCalls (Method 2)\466:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5467,7 +5535,7 @@ where [refTable].[CallTypeID] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Outputs[Union All Output 1].Columns[CallType]};</property>
+                  name="ParameterMap">#{Package\DFT - Load into FactCalls (Method 2)\120:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5939,7 +6007,7 @@ where [refTable].[Time_hhmm] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\DFT - Load into FactCalls (Method 2)\949:invalid};</property>
+                  name="ParameterMap">#{Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Inputs[Union All Input 1].Columns[CallType]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -6317,10 +6385,9 @@ where [refTable].[Time_hhmm] = ?</property>
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Outputs[Union All Output 1].Columns[CallDurationSec]" />
                     <inputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - DWH FactCalls.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin]"
-                      cachedDataType="numeric"
+                      cachedDataType="wstr"
+                      cachedLength="10"
                       cachedName="CallChargesPerMin"
-                      cachedPrecision="10"
-                      cachedScale="2"
                       externalMetadataColumnId="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - DWH FactCalls.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Outputs[Union All Output 1].Columns[CallChargesPerMin]" />
                     <inputColumn
@@ -6412,10 +6479,9 @@ where [refTable].[Time_hhmm] = ?</property>
                       name="CallDurationSec" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - DWH FactCalls.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
-                      dataType="numeric"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      dataType="wstr"
+                      length="10"
+                      name="CallChargesPerMin" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - DWH FactCalls.Inputs[OLE DB Destination Input].ExternalColumns[ChargedAmount]"
                       dataType="numeric"
@@ -6772,14 +6838,13 @@ where [refTable].[Time_hhmm] = ?</property>
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]"
-                      dataType="numeric"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].ExternalColumns[CallChargesPerMin]"
+                      length="10"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]"
                       name="CallChargesPerMin"
-                      precision="10"
-                      scale="2"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].Columns[ChargedAmount]"
@@ -6864,10 +6929,9 @@ where [refTable].[Time_hhmm] = ?</property>
                       scale="2" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].ExternalColumns[CallChargesPerMin]"
-                      dataType="numeric"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      dataType="wstr"
+                      length="10"
+                      name="CallChargesPerMin" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output].ExternalColumns[ChargedAmount]"
                       dataType="numeric"
@@ -6942,11 +7006,10 @@ where [refTable].[Time_hhmm] = ?</property>
                       scale="2" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Error Output].Columns[CallChargesPerMin]"
-                      dataType="numeric"
+                      dataType="wstr"
+                      length="10"
                       lineageId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Error Output].Columns[CallChargesPerMin]"
-                      name="CallChargesPerMin"
-                      precision="10"
-                      scale="2" />
+                      name="CallChargesPerMin" />
                     <outputColumn
                       refId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Error Output].Columns[ChargedAmount]"
                       dataType="numeric"
@@ -6994,7 +7057,32 @@ where [refTable].[Time_hhmm] = ?</property>
               name="Aggregate Output 1"
               startId="Package\DFT - Load into FactCalls (Method 2)\AGG - FunctionalRejects.Outputs[Aggregate Output 1]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output7]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3]"
+              name="Derived Column Output"
+              startId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output6]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output5]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1]"
+              name="Derived Column Output"
+              startId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output4]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTypeID.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output3]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallChargesPerYear.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output2]"
               endId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Inputs[Union All Input 2]"
               name="Derived Column Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown EmployeeID.Outputs[Derived Column Output]" />
@@ -7004,82 +7092,57 @@ where [refTable].[Time_hhmm] = ?</property>
               name="Derived Column Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTime.Outputs[Derived Column Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output2]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output8]"
               endId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 4]"
               name="Derived Column Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo(CallDate).Outputs[Derived Column Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output3]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 3]"
-              name="Derived Column Output"
-              startId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Outputs[Derived Column Output]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output4]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Inputs[Union All Input 2]"
-              name="Derived Column Output"
-              startId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallChargesPerYear.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output5]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 1]"
-              name="Derived Column Output"
-              startId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Outputs[Derived Column Output]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output6]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Inputs[Union All Input 2]"
-              name="Derived Column Output"
-              startId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Outputs[Derived Column Output]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output8]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Inputs[Union All Input 2]"
-              name="Derived Column Output"
-              startId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTypeID.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output7]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output]"
               endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Inputs[Union All Input 2]"
               name="Derived Column Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallDate.Outputs[Derived Column Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output3]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Inputs[Union All Input 1]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output2]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Inputs[Union All Input 1]"
               name="Lookup Match Output"
-              startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimDate (CallDate).Outputs[Lookup Match Output]" />
+              startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimEmployees (EmployeeID).Outputs[Lookup Match Output]" />
             <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output4]"
               endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Inputs[Union All Input 1]"
               name="Lookup Match Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallTypes.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output2]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Inputs[Union All Input 1]"
-              name="Lookup Match Output"
-              startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime).Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output1]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Inputs[Union All Input 1]"
-              name="Lookup Match Output"
-              startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimEmployees (EmployeeID).Outputs[Lookup Match Output]" />
-            <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Inputs[Union All Input 1]"
+              name="Lookup Match Output"
+              startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimDate (CallDate).Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output3]"
               endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Inputs[Union All Input 1]"
               name="Lookup Match Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallChargesPerYear.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output2]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output1]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Inputs[Union All Input 1]"
+              name="Lookup Match Output"
+              startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime).Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output]"
               endId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallDate.Inputs[Multicast Input 1]"
               name="Lookup No Match Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimDate (CallDate).Outputs[Lookup No Match Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output3]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output1]"
               endId="Package\DFT - Load into FactCalls (Method 2)\MLT - EmployeeID.Inputs[Multicast Input 1]"
               name="Lookup No Match Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimEmployees (EmployeeID).Outputs[Lookup No Match Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output2]"
               endId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTime.Inputs[Multicast Input 1]"
               name="Lookup No Match Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime).Outputs[Lookup No Match Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output1]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output3]"
               endId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallChargesPerYear.Inputs[Multicast Input 1]"
               name="Lookup No Match Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallChargesPerYear.Outputs[Lookup No Match Output]" />
@@ -7089,35 +7152,40 @@ where [refTable].[Time_hhmm] = ?</property>
               name="Lookup No Match Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallTypes.Outputs[Lookup No Match Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 14]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 1]"
               endId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTypeID.Inputs[Derived Column Input]"
               name="Multicast Output 1"
               startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTypeID.Outputs[Multicast Output 1]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 12]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Inputs[Derived Column Input]"
-              name="Multicast Output 1"
-              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallChargesPerYear.Outputs[Multicast Output 1]" />
-            <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 13]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Inputs[Derived Column Input]"
-              name="Multicast Output 1"
-              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - EmployeeID.Outputs[Multicast Output 1]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 11]"
               endId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime).Inputs[Derived Column Input]"
               name="Multicast Output 1"
               startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTime.Outputs[Multicast Output 1]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 1]"
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 14]"
               endId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallDate.Inputs[Derived Column Input]"
               name="Multicast Output 1"
               startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallDate.Outputs[Multicast Output 1]" />
             <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 11]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear).Inputs[Derived Column Input]"
+              name="Multicast Output 1"
+              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallChargesPerYear.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 12]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees).Inputs[Derived Column Input]"
+              name="Multicast Output 1"
+              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - EmployeeID.Outputs[Multicast Output 1]" />
+            <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 23]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTime.Inputs[Derived Column Input]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallChargesPerYear.Inputs[Derived Column Input]"
               name="Multicast Output 2"
-              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTime.Outputs[Multicast Output 2]" />
+              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallChargesPerYear.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 22]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown EmployeeID.Inputs[Derived Column Input]"
+              name="Multicast Output 2"
+              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - EmployeeID.Outputs[Multicast Output 2]" />
             <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 21]"
               endId="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo(CallDate).Inputs[Derived Column Input]"
@@ -7125,34 +7193,24 @@ where [refTable].[Time_hhmm] = ?</property>
               startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallDate.Outputs[Multicast Output 2]" />
             <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 2]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown EmployeeID.Inputs[Derived Column Input]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTime.Inputs[Derived Column Input]"
               name="Multicast Output 2"
-              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - EmployeeID.Outputs[Multicast Output 2]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 22]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallChargesPerYear.Inputs[Derived Column Input]"
-              name="Multicast Output 2"
-              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallChargesPerYear.Outputs[Multicast Output 2]" />
+              startId="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTime.Outputs[Multicast Output 2]" />
             <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[OLE DB Source Output]"
               endId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimDate (CallDate).Inputs[Lookup Input]"
               name="OLE DB Source Output"
               startId="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 1]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\AGG - FunctionalRejects.Inputs[Aggregate Input 1]"
-              name="Union All Output 1"
-              startId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 11]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimEmployees (EmployeeID).Inputs[Lookup Input]"
-              name="Union All Output 1"
-              startId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1]" />
-            <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 12]"
               endId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallChargesPerYear.Inputs[Lookup Input]"
               name="Union All Output 1"
               startId="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID.Outputs[Union All Output 1]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 1]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime).Inputs[Lookup Input]"
+              name="Union All Output 1"
+              startId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1]" />
             <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 13]"
               endId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallTypes.Inputs[Lookup Input]"
@@ -7160,14 +7218,19 @@ where [refTable].[Time_hhmm] = ?</property>
               startId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear.Outputs[Union All Output 1]" />
             <path
               refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 14]"
-              endId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime).Inputs[Lookup Input]"
-              name="Union All Output 1"
-              startId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate.Outputs[Union All Output 1]" />
-            <path
-              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 15]"
               endId="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - DWH FactCalls.Inputs[OLE DB Destination Input]"
               name="Union All Output 1"
               startId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID.Outputs[Union All Output 1]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 11]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\LKP - DimEmployees (EmployeeID).Inputs[Lookup Input]"
+              name="Union All Output 1"
+              startId="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime.Outputs[Union All Output 1]" />
+            <path
+              refId="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 15]"
+              endId="Package\DFT - Load into FactCalls (Method 2)\AGG - FunctionalRejects.Inputs[Aggregate Input 1]"
+              name="Union All Output 1"
+              startId="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects.Outputs[Union All Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -7251,159 +7314,231 @@ where [refTable].[Time_hhmm] = ?</property>
       <GraphLayout
         Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="150.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTime"
-          TopLeft="403.5,423.041667632551" />
+          Size="173.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallTypes"
+          TopLeft="71,1277.20833629019" />
         <NodeLayout
-          Size="164,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID"
-          TopLeft="76,871.208331737874" />
+          Size="198.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo(CallDate)"
+          TopLeft="906.5,102.958334369171" />
         <NodeLayout
-          Size="149.5,44.5"
-          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - CallDate"
-          TopLeft="426,103.875000524645" />
-        <NodeLayout
-          Size="253,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallChargesPerYear"
-          TopLeft="435.5,1143.08333529739" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls"
-          TopLeft="67,15.166666591333" />
-        <NodeLayout
-          Size="223,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallChargesPerYear"
-          TopLeft="50.75,1036.5833348131" />
-        <NodeLayout
-          Size="260,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear)"
-          TopLeft="753.75,987.625002736226" />
-        <NodeLayout
-          Size="214,46"
-          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown EmployeeID"
-          TopLeft="391.25,869.54166795541" />
-        <NodeLayout
-          Size="148.5,44.5"
-          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime"
-          TopLeft="95.5,566.166664847897" />
-        <NodeLayout
-          Size="202.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime)"
-          TopLeft="787.5,382.041672410857" />
+          Size="207.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - DWH FactCalls"
+          TopLeft="54.0000000000002,1546.75000166273" />
         <NodeLayout
           Size="219.5,42"
           Id="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - FunctionalRejects"
           TopLeft="1604,618.16667275793" />
         <NodeLayout
-          Size="198.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo(CallDate)"
-          TopLeft="907.5,102.958334369171" />
-        <NodeLayout
-          Size="203,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear"
-          TopLeft="57,1148.49999832114" />
-        <NodeLayout
-          Size="205.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - CallChargesPerYear"
-          TopLeft="462,1033.50000200173" />
-        <NodeLayout
-          Size="207.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - DWH FactCalls"
-          TopLeft="45.5000000000002,1545.66666833478" />
-        <NodeLayout
-          Size="198.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTime"
-          TopLeft="374,565.666667430765" />
+          Size="201.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime)"
+          TopLeft="65.5,422.875000460073" />
         <NodeLayout
           Size="215.5,45"
           Id="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (Employees)"
           TopLeft="743.5,704.458335434604" />
         <NodeLayout
-          Size="166.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - EmployeeID"
-          TopLeft="441,703.75000159815" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects"
-          TopLeft="1129.5,621.583331487659" />
-        <NodeLayout
-          Size="199,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimDate (CallDate)"
-          TopLeft="63.25,108.583333327952" />
-        <NodeLayout
-          Size="245.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimEmployees (EmployeeID)"
-          TopLeft="42,709.541667729409" />
+          Size="205.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - CallChargesPerYear"
+          TopLeft="462,1033.50000200173" />
         <NodeLayout
           Size="197,42"
           Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallDate"
           TopLeft="404.75,257.875000266358" />
         <NodeLayout
+          Size="202.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\DER - ErrorInfo (CallTime)"
+          TopLeft="787.5,380.958339082905" />
+        <NodeLayout
+          Size="214,46"
+          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown EmployeeID"
+          TopLeft="391.25,869.54166795541" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTypeID"
+          TopLeft="440.5,1423.95833611261" />
+        <NodeLayout
+          Size="223,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallChargesPerYear"
+          TopLeft="50.75,1036.5833348131" />
+        <NodeLayout
+          Size="245.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimEmployees (EmployeeID)"
+          TopLeft="42,709.541667729409" />
+        <NodeLayout
+          Size="198.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTime"
+          TopLeft="374,565.666667430765" />
+        <NodeLayout
+          Size="253,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallChargesPerYear"
+          TopLeft="435.5,1143.08333529739" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimDate (CallDate)"
+          TopLeft="63.25,108.583333327952" />
+        <NodeLayout
+          Size="150.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTime"
+          TopLeft="403.5,423.041667632551" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls"
+          TopLeft="67,15.166666591333" />
+        <NodeLayout
+          Size="260,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Error Info (CallChargesPerYear)"
+          TopLeft="753.75,987.625002736226" />
+        <NodeLayout
+          Size="149.5,44.5"
+          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - CallDate"
+          TopLeft="426,103.875000524645" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTypeID"
+          TopLeft="457.5,1278.25000350302" />
+        <NodeLayout
+          Size="166.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - EmployeeID"
+          TopLeft="441,703.75000159815" />
+        <NodeLayout
           Size="195,42"
           Id="Package\DFT - Load into FactCalls (Method 2)\AGG - FunctionalRejects"
           TopLeft="1361.25,619.62500557738" />
-        <NodeLayout
-          Size="201.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime)"
-          TopLeft="65.5,422.875000460073" />
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 12]"
-          TopLeft="160.125,913.208331737874">
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output4]"
+          TopLeft="244.5,1298.7291698966">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,123.375003075227"
+              EndConnector="213,0"
               Start="0,0"
-              End="0,115.875003075227">
+              End="205.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,115.875003075227" />
+                    End="205.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="46.94361328125,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 11]"
-          TopLeft="167.25,610.666664847897">
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output3]"
+          TopLeft="273.75,1056.04166840741">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,98.8750028815116"
+              EndConnector="188.25,0"
               Start="0,0"
-              End="0,91.3750028815116">
+              End="180.75,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,91.3750028815116" />
+                    End="180.75,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="34.56861328125,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 1]"
-          TopLeft="1322.5,641.604168532519">
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output2]"
+          TopLeft="267,443.958334046312">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="38.75,0"
+              EndConnector="136.5,0"
               Start="0,0"
-              End="31.25,0">
+              End="129,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="31.25,0" />
+                    End="129,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="8.69361328125,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output1]"
+          TopLeft="287.5,727.645834663779">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="153.5,0"
+              Start="0,0"
+              End="146,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="146,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="17.19361328125,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output]"
+          TopLeft="262.25,127.854166926299">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="163.75,0"
+              Start="0,0"
+              End="156.25,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="156.25,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="22.31861328125,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Aggregate Output 1]"
+          TopLeft="1556.25,639.895839167655">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="47.75,0"
+              Start="0,0"
+              End="40.25,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="40.25,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7436,28 +7571,6 @@ where [refTable].[Time_hhmm] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 23]"
-          TopLeft="476,465.041667632551">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,100.624999798214"
-              Start="0,0"
-              End="0,93.1249997982143">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,93.1249997982143" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 22]"
           TopLeft="563.375,1075.50000200173">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7479,29 +7592,7 @@ where [refTable].[Time_hhmm] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 21]"
-          TopLeft="575.5,125.041667446908">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="332,0"
-              Start="0,0"
-              End="324.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="324.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 2]"
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 22]"
           TopLeft="498.041666666667,745.75000159815">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7523,7 +7614,107 @@ where [refTable].[Time_hhmm] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 21]"
+          TopLeft="575.5,125.041667446908">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="331,0"
+              Start="0,0"
+              End="323.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="323.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 2]"
+          TopLeft="476,465.041667632551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,100.624999798214"
+              Start="0,0"
+              End="0,93.1249997982143">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,93.1249997982143" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 14]"
+          TopLeft="502,148.375000524645">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,109.499999741713"
+              Start="0,0"
+              End="0,101.999999741713">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,101.999999741713" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 13]"
+          TopLeft="554,444.041667632551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="233.5,-42.0833285496464"
+              Start="0,0"
+              End="226,-42.0833285496464">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="112.75,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.75,0"
+                    Point2="116.75,0"
+                    Point3="116.75,-4" />
+                  <mssgle:LineSegment
+                    End="116.75,-38.0833285496464" />
+                  <mssgle:CubicBezierSegment
+                    Point1="116.75,-38.0833285496464"
+                    Point2="116.75,-42.0833285496464"
+                    Point3="120.75,-42.0833285496464" />
+                  <mssgle:LineSegment
+                    End="226,-42.0833285496464" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 12]"
           TopLeft="607.5,725.854168516377">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7545,7 +7736,7 @@ where [refTable].[Time_hhmm] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 12]"
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 11]"
           TopLeft="667.5,1054.50000200173">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7579,513 +7770,7 @@ where [refTable].[Time_hhmm] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 11]"
-          TopLeft="554,444.041667632551">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="233.5,-40.999995221694"
-              Start="0,0"
-              End="226,-40.999995221694">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="112.75,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.75,0"
-                    Point2="116.75,0"
-                    Point3="116.75,-4" />
-                  <mssgle:LineSegment
-                    End="116.75,-36.999995221694" />
-                  <mssgle:CubicBezierSegment
-                    Point1="116.75,-36.999995221694"
-                    Point2="116.75,-40.999995221694"
-                    Point3="120.75,-40.999995221694" />
-                  <mssgle:LineSegment
-                    End="226,-40.999995221694" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 1]"
-          TopLeft="502,148.375000524645">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,109.499999741713"
-              Start="0,0"
-              End="0,101.999999741713">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,101.999999741713" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output3]"
-          TopLeft="287.5,727.645834663779">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="153.5,0"
-              Start="0,0"
-              End="146,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="146,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="17.19361328125,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output2]"
-          TopLeft="262.25,127.854166926299">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="163.75,0"
-              Start="0,0"
-              End="156.25,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="156.25,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="22.31861328125,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output1]"
-          TopLeft="273.75,1056.04166840741">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="188.25,0"
-              Start="0,0"
-              End="180.75,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="180.75,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="34.56861328125,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output]"
-          TopLeft="267,443.958334046312">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="136.5,0"
-              Start="0,0"
-              End="129,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="129,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="8.69361328125,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output2]"
-          TopLeft="168,464.875000460073">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,101.291664387824"
-              Start="0,0"
-              End="0,93.791664387824">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,93.791664387824" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,41.091144693912,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output1]"
-          TopLeft="161.375,751.541667729409">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,119.666664008466"
-              Start="0,0"
-              End="0,112.166664008466">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,112.166664008466" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,50.278644504233,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output]"
-          TopLeft="160.375,1078.5833348131">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,69.9166635080378"
-              Start="0,0"
-              End="0,62.4166635080378">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62.4166635080378" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,25.4036442540189,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output6]"
-          TopLeft="851.25,704.458335434604">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="374.75,-40.8750039469451"
-              Start="0,0"
-              End="374.75,-33.3750039469451">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-16.4375019734725" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-16.4375019734725"
-                    Point2="0,-20.4375019734725"
-                    Point3="4,-20.4375019734725" />
-                  <mssgle:LineSegment
-                    End="370.75,-20.4375019734725" />
-                  <mssgle:CubicBezierSegment
-                    Point1="370.75,-20.4375019734725"
-                    Point2="374.75,-20.4375019734725"
-                    Point3="374.75,-24.4375019734725" />
-                  <mssgle:LineSegment
-                    End="374.75,-33.3750039469451" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output5]"
-          TopLeft="888.75,424.041672410857">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="337.25,197.541659076802"
-              Start="0,0"
-              End="337.25,190.041659076802">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,94.770829538401" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,94.770829538401"
-                    Point2="0,98.770829538401"
-                    Point3="4,98.770829538401" />
-                  <mssgle:LineSegment
-                    End="333.25,98.770829538401" />
-                  <mssgle:CubicBezierSegment
-                    Point1="333.25,98.770829538401"
-                    Point2="337.25,98.770829538401"
-                    Point3="337.25,102.770829538401" />
-                  <mssgle:LineSegment
-                    End="337.25,190.041659076802" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output4]"
-          TopLeft="435.5,1166.79166680926">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-175.5,0"
-              Start="0,0"
-              End="-168,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-168,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output3]"
-          TopLeft="883.75,987.625002736226">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="373.083333333333,-324.041671248567"
-              Start="0,0"
-              End="373.083333333333,-316.541671248567">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-188.826441575458" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-188.826441575458"
-                    Point2="0,-192.826441575458"
-                    Point3="4,-192.826441575458" />
-                  <mssgle:LineSegment
-                    End="369.083333333333,-192.826441575458" />
-                  <mssgle:CubicBezierSegment
-                    Point1="369.083333333333,-192.826441575458"
-                    Point2="373.083333333333,-192.826441575458"
-                    Point3="373.083333333333,-196.826441575458" />
-                  <mssgle:LineSegment
-                    End="373.083333333333,-316.541671248567" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output2]"
-          TopLeft="1006.75,144.958334369171">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="250.083333333333,476.624997118488"
-              Start="0,0"
-              End="250.083333333333,469.124997118488">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,279.623713598771" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,279.623713598771"
-                    Point2="0,283.623713598771"
-                    Point3="4,283.623713598771" />
-                  <mssgle:LineSegment
-                    End="246.083333333333,283.623713598771" />
-                  <mssgle:CubicBezierSegment
-                    Point1="246.083333333333,283.623713598771"
-                    Point2="250.083333333333,283.623713598771"
-                    Point3="250.083333333333,287.623713598771" />
-                  <mssgle:LineSegment
-                    End="250.083333333333,469.124997118488" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output1]"
-          TopLeft="374,587.541666139331">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-130,0"
-              Start="0,0"
-              End="-122.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-122.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output]"
-          TopLeft="391.25,892.374999846642">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-151.25,0"
-              Start="0,0"
-              End="-143.75,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-143.75,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Aggregate Output 1]"
-          TopLeft="1556.25,639.895839167655">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="47.75,0"
-              Start="0,0"
-              End="40.25,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="40.25,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="173.5,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallTypes"
-          TopLeft="71,1277.20833629019" />
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 13]"
-          TopLeft="158.125,1190.49999832114">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,86.7083379690475"
-              Start="0,0"
-              End="0,79.2083379690475">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,79.2083379690475" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="161,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\MLT - CallTypeID"
-          TopLeft="457.5,1278.25000350302" />
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup No Match Output4]"
-          TopLeft="244.5,1298.7291698966">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="213,0"
-              Start="0,0"
-              End="205.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="205.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="46.94361328125,5,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="209,42"
-          Id="Package\DFT - Load into FactCalls (Method 2)\DER - Unknown CallTypeID"
-          TopLeft="440.5,1423.95833611261" />
-        <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Multicast Output 14]"
           TopLeft="541.5,1320.25000350302">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -8109,45 +7794,45 @@ where [refTable].[Time_hhmm] = ?</property>
         <NodeLayout
           Size="147,42"
           Id="Package\DFT - Load into FactCalls (Method 2)\ALL - CallDate"
-          TopLeft="88.5,254.041665404828" />
+          TopLeft="90.5,259.124998765066" />
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output3]"
-          TopLeft="162.375,150.583333327952">
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output]"
+          TopLeft="163.375,150.583333327952">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,103.458332076876"
+              EndConnector="0,108.541665437114"
               Start="0,0"
-              End="0,95.958332076876">
+              End="0,101.041665437114">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,95.958332076876" />
+                    End="0,101.041665437114" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,42.174478538438,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,44.7161452185571,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output7]"
-          TopLeft="404.75,276.958332835593">
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output]"
+          TopLeft="404.75,279.499999515712">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-169.25,0"
+              EndConnector="-167.25,0"
               Start="0,0"
-              End="-161.75,0">
+              End="-159.75,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-161.75,0" />
+                    End="-159.75,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8157,19 +7842,19 @@ where [refTable].[Time_hhmm] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 14]"
-          TopLeft="164.125,296.041665404828">
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 1]"
+          TopLeft="165.125,301.124998765066">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,126.833335055245"
+              EndConnector="0,121.750001695007"
               Start="0,0"
-              End="0,119.333335055245">
+              End="0,114.250001695007">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,119.333335055245" />
+                    End="0,114.250001695007" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8179,47 +7864,425 @@ where [refTable].[Time_hhmm] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="159,43"
-          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID"
-          TopLeft="77,1423.66666468647" />
+          Size="148.5,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTime"
+          TopLeft="89.5,560.416664928612" />
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output4]"
-          TopLeft="157.125,1319.20833629019">
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output1]"
+          TopLeft="165,464.875000460073">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,104.458328396282"
+              EndConnector="0,95.5416644685388"
               Start="0,0"
-              End="0,96.9583283962822">
+              End="0,88.0416644685388">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,96.9583283962822" />
+                    End="0,88.0416644685388" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,42.6744766981411,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,38.2161447342694,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output8]"
-          TopLeft="440.5,1445.06250039954">
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output1]"
+          TopLeft="374,584.041666179688">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-204.5,0"
+              EndConnector="-136,0"
               Start="0,0"
-              End="-197,0">
+              End="-128.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-197,0" />
+                    End="-128.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 11]"
+          TopLeft="164.25,602.416664928612">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,107.125002800797"
+              Start="0,0"
+              End="0,99.6250028007972">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,99.6250028007972" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - EmployeeID"
+          TopLeft="83,869.08333155223" />
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output2]"
+          TopLeft="164.875,751.541667729409">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,117.541663822821"
+              Start="0,0"
+              End="0,110.041663822821">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,110.041663822821" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,49.2161444114107,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output2]"
+          TopLeft="391.25,891.31249975382">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-144.25,0"
+              Start="0,0"
+              End="-136.75,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-136.75,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 12]"
+          TopLeft="163.625,911.08333155223">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,125.50000326087"
+              Start="0,0"
+              End="0,118.00000326087">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,118.00000326087" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="203,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - CallChargesPerYear"
+          TopLeft="59,1148.49999832114" />
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output3]"
+          TopLeft="161.375,1078.5833348131">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,69.9166635080358"
+              Start="0,0"
+              End="0,62.4166635080358">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.4166635080358" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,25.4036442540179,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output3]"
+          TopLeft="435.5,1166.79166680926">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-173.5,0"
+              Start="0,0"
+              End="-166,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-166,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 13]"
+          TopLeft="159.125,1190.49999832114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,86.7083379690541"
+              Start="0,0"
+              End="0,79.2083379690541">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.2083379690541" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="159,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - CallTypeID"
+          TopLeft="78,1416.0833313908" />
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Lookup Match Output4]"
+          TopLeft="157.625,1319.20833629019">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,96.8749951006116"
+              Start="0,0"
+              End="0,89.3749951006116">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,89.3749951006116" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,38.8828100503058,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 14]"
+          TopLeft="157.625,1458.0833313908">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,88.666670271931"
+              Start="0,0"
+              End="0,81.166670271931">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,81.166670271931" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output4]"
+          TopLeft="440.5,1441.02083375171">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-203.5,0"
+              Start="0,0"
+              End="-196,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-196,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="193,42"
+          Id="Package\DFT - Load into FactCalls (Method 2)\ALL - Functional Rejects"
+          TopLeft="1123,613.541665985973" />
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output5]"
+          TopLeft="851.25,704.458335434604">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="368.25,-48.9166694486307"
+              Start="0,0"
+              End="368.25,-41.4166694486307">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-20.4583347243154" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-20.4583347243154"
+                    Point2="0,-24.4583347243154"
+                    Point3="4,-24.4583347243154" />
+                  <mssgle:LineSegment
+                    End="364.25,-24.4583347243154" />
+                  <mssgle:CubicBezierSegment
+                    Point1="364.25,-24.4583347243154"
+                    Point2="368.25,-24.4583347243154"
+                    Point3="368.25,-28.4583347243154" />
+                  <mssgle:LineSegment
+                    End="368.25,-41.4166694486307" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output6]"
+          TopLeft="883.75,987.625002736226">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="366.583333333333,-332.083336750253"
+              Start="0,0"
+              End="366.583333333333,-324.583336750253">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-193.611769761969" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-193.611769761969"
+                    Point2="0,-197.611769761969"
+                    Point3="4,-197.611769761969" />
+                  <mssgle:LineSegment
+                    End="362.583333333333,-197.611769761969" />
+                  <mssgle:CubicBezierSegment
+                    Point1="362.583333333333,-197.611769761969"
+                    Point2="366.583333333333,-197.611769761969"
+                    Point3="366.583333333333,-201.611769761969" />
+                  <mssgle:LineSegment
+                    End="366.583333333333,-324.583336750253" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output7]"
+          TopLeft="888.75,422.958339082905">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="330.75,190.583326903069"
+              Start="0,0"
+              End="330.75,183.083326903069">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.2916634515343" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,91.2916634515343"
+                    Point2="0,95.2916634515343"
+                    Point3="4,95.2916634515343" />
+                  <mssgle:LineSegment
+                    End="326.75,95.2916634515343" />
+                  <mssgle:CubicBezierSegment
+                    Point1="326.75,95.2916634515343"
+                    Point2="330.75,95.2916634515343"
+                    Point3="330.75,99.2916634515343" />
+                  <mssgle:LineSegment
+                    End="330.75,183.083326903069" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into FactCalls (Method 2).Paths[Derived Column Output8]"
+          TopLeft="1005.75,144.958334369171">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="244.583333333333,468.583331616802"
+              Start="0,0"
+              End="244.583333333333,461.083331616802">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,274.838385412259" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,274.838385412259"
+                    Point2="0,278.838385412259"
+                    Point3="4,278.838385412259" />
+                  <mssgle:LineSegment
+                    End="240.583333333333,278.838385412259" />
+                  <mssgle:CubicBezierSegment
+                    Point1="240.583333333333,278.838385412259"
+                    Point2="244.583333333333,278.838385412259"
+                    Point3="244.583333333333,282.838385412259" />
+                  <mssgle:LineSegment
+                    End="244.583333333333,461.083331616802" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8230,18 +8293,18 @@ where [refTable].[Time_hhmm] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load into FactCalls (Method 2).Paths[Union All Output 15]"
-          TopLeft="152.875,1466.66666468647">
+          TopLeft="1316,637.583335781677">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,79.0000036483077"
+              EndConnector="45.25,0"
               Start="0,0"
-              End="0,71.5000036483077">
+              End="37.75,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,71.5000036483077" />
+                    End="37.75,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8254,20 +8317,7 @@ where [refTable].[Time_hhmm] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallChargesPerYear">
+    design-time-name="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallTypes">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -8277,7 +8327,7 @@ where [refTable].[Time_hhmm] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DimCallChargesPerYear]</Value>
+          type="q3:string">[dbo].[DimCallTypes]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -8286,19 +8336,6 @@ where [refTable].[Time_hhmm] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - FunctionalRejects">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -8316,7 +8353,20 @@ where [refTable].[Time_hhmm] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into FactCalls (Method 2)\LKP - DimDate (CallDate)">
+    design-time-name="Package\DFT - Load into FactCalls (Method 2)\OLE_DST - FunctionalRejects">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime)">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -8326,7 +8376,30 @@ where [refTable].[Time_hhmm] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DimDate]</Value>
+          type="q3:string">[dbo].[DimTime]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallChargesPerYear">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimCallChargesPerYear]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -8362,7 +8435,7 @@ where [refTable].[Time_hhmm] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into FactCalls (Method 2)\LKP - DimTime (CallTime)">
+    design-time-name="Package\DFT - Load into FactCalls (Method 2)\LKP - DimDate (CallDate)">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -8372,7 +8445,7 @@ where [refTable].[Time_hhmm] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DimTime]</Value>
+          type="q3:string">[dbo].[DimDate]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -8385,25 +8458,15 @@ where [refTable].[Time_hhmm] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load into FactCalls (Method 2)\LKP - DimCallTypes">
+    design-time-name="Package\DFT - Load into FactCalls (Method 2)\OLE_SRC - ODS Calls">
     <Properties>
       <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimCallTypes]</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

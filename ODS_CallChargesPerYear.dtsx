@@ -11,8 +11,8 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="58"
-  DTS:VersionGUID="{1694913A-6408-44A5-A34F-B1A86557D943}">
+  DTS:VersionBuild="60"
+  DTS:VersionGUID="{4D1CF2BC-B760-4418-9A52-3C0EDAD28361}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -357,165 +357,6 @@
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4]"
-                  hasSideEffects="true"
-                  name="Union All Input 4">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[CallTypeKey]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="CallTypeKey"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallTypeKey]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[CallTypeKey]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[CallType]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="CallType"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallType]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[CallType]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[Year]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="Year"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[Year]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[Year]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[CallChargesPerMin]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="CallChargesPerMin"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[CallChargesPerMin]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[ErrorCode]"
-                      cachedDataType="i4"
-                      cachedName="ErrorCode"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[ErrorCode]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[ErrorColumn]"
-                      cachedDataType="i4"
-                      cachedName="ErrorColumn"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[ErrorColumn]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[RejectDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="RejectDate"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectDate]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[RejectDate]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[RejectType]"
-                      cachedDataType="wstr"
-                      cachedLength="16"
-                      cachedName="RejectType"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectType]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[RejectType]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[RejectColumn]"
-                      cachedDataType="wstr"
-                      cachedLength="17"
-                      cachedName="RejectColumn"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectColumn]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[RejectColumn]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[RejectStep]"
-                      cachedDataType="wstr"
-                      cachedLength="44"
-                      cachedName="RejectStep"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectStep]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[RejectStep]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4].Columns[RejectDetails]"
-                      cachedDataType="wstr"
-                      cachedLength="300"
-                      cachedName="RejectDetails"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectDetails]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[RejectDetails]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
                   refId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 3]"
                   dangling="true"
                   hasSideEffects="true"
@@ -591,82 +432,6 @@
                       length="44"
                       lineageId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Outputs[Union All Output 1].Columns[RejectStep]"
                       name="RejectStep" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type"
-              componentClassID="Microsoft.DataConvert"
-              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Data Conversion"
-              name="DCNV - Check CallChargesPerMin type"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input]"
-                  name="Data Conversion Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input].Columns[CallChargesPerMin]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="CallChargesPerMin"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output]"
-                  exclusionGroup="1"
-                  name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]"
-                      dataType="r4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]"
-                      name="CallChargesPerMin_FLOAT"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -825,41 +590,47 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType"
+              refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
-              name="DCNV - Resize CallType"
+              name="DCNV - Resize Fields"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input].Columns[CallType]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Inputs[Data Conversion Input].Columns[CallType]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CallType"
                       lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallType]" />
+                    <inputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Inputs[Data Conversion Input].Columns[CallChargesPerMin]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CallChargesPerMin"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Output].Columns[CallType_50]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
                       length="50"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Output].Columns[CallType_50]"
                       name="CallType_50"
                       truncationRowDisposition="IgnoreFailure">
                       <properties>
@@ -874,199 +645,47 @@
                           name="FastParse">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Output].Columns[CallChargesPerMin_10]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Output].Columns[CallChargesPerMin_10]"
+                      name="CallChargesPerMin_10"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin)"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="DER - Error Info (CallChargesPerMin)"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Inputs[Derived Column Input].Columns[CallChargesPerMin]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="CallChargesPerMin"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectDate]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectDate]"
-                      name="RejectDate"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[GETDATE]()</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">GETDATE()</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectType]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="16"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectType]"
-                      name="RejectType"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">"float conversion"</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">"float conversion"</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectColumn]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="17"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectColumn]"
-                      name="RejectColumn"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">"CallChargesPerMin"</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">"CallChargesPerMin"</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectDetails]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="300"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectDetails]"
-                      name="RejectDetails"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">"The CallChargesPerMin value, " + #{Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear.Outputs[OLE DB Source Output].Columns[CallChargesPerMin]} + " is not a float."</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">"The CallChargesPerMin value, " + CallChargesPerMin + " is not a float."</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectStep]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="44"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output].Columns[RejectStep]"
-                      name="RejectStep"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">@[System::PackageName] + "(" + @[System::TaskName] + ")"</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">@[System::PackageName] + "(" + @[System::TaskName] + ")"</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1597,7 +1216,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[CallChargesPerYear]</property>
+                  name="OpenRowset">[dbo].[CallChargesPerYear]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1665,7 +1284,7 @@
                       cachedLength="50"
                       cachedName="CallType_50"
                       externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallType]"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output].Columns[CallType_50]" />
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Output].Columns[CallType_50]" />
                     <inputColumn
                       refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[Year_INT]"
                       cachedDataType="i4"
@@ -1673,11 +1292,12 @@
                       externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
                       lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Output].Columns[Year_INT]" />
                     <inputColumn
-                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin_FLOAT]"
-                      cachedDataType="r4"
-                      cachedName="CallChargesPerMin_FLOAT"
+                      refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].Columns[CallChargesPerMin_10]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="CallChargesPerMin_10"
                       externalMetadataColumnId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
-                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output].Columns[CallChargesPerMin_FLOAT]" />
+                      lineageId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Output].Columns[CallChargesPerMin_10]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1696,7 +1316,8 @@
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input].ExternalColumns[CallChargesPerMin]"
-                      dataType="r4"
+                      dataType="wstr"
+                      length="10"
                       name="CallChargesPerMin" />
                   </externalMetadataColumns>
                 </input>
@@ -1907,34 +1528,24 @@
               startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Error Output]" />
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Error Output1]"
-              endId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Inputs[Derived Column Input]"
-              name="Data Conversion Error Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Error Output]" />
-            <path
-              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Error Output2]"
               endId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallTypeKey).Inputs[Derived Column Input]"
               name="Data Conversion Error Output"
               startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Error Output]" />
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output]"
-              endId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Inputs[Data Conversion Input]"
-              name="Data Conversion Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output1]"
-              endId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Inputs[Data Conversion Input]"
-              name="Data Conversion Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
               endId="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType.Outputs[Data Conversion Output]" />
+              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
+              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output1]"
               endId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Inputs[Data Conversion Input]"
               name="Data Conversion Output"
               startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
+              endId="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields.Inputs[Data Conversion Input]"
+              name="Data Conversion Output"
+              startId="Package\DFT - Load into CallChargesPerYear\DCNV - Check Year type.Outputs[Data Conversion Output]" />
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[Derived Column Output]"
               endId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 1]"
@@ -1945,11 +1556,6 @@
               endId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 2]"
               name="Derived Column Output"
               startId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (Year).Outputs[Derived Column Output]" />
-            <path
-              refId="Package\DFT - Load into CallChargesPerYear.Paths[Derived Column Output2]"
-              endId="Package\DFT - Load into CallChargesPerYear\ALL - Errors.Inputs[Union All Input 4]"
-              name="Derived Column Output"
-              startId="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin).Outputs[Derived Column Output]" />
             <path
               refId="Package\DFT - Load into CallChargesPerYear.Paths[OLE DB Source Output]"
               endId="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type.Inputs[Data Conversion Input]"
@@ -2049,11 +1655,11 @@
         <NodeLayout
           Size="259,42"
           Id="Package\DFT - Load into CallChargesPerYear\OLE_SRC - ODS CallChargesPerYear"
-          TopLeft="61,646.749996787558" />
+          TopLeft="59,501.583330841942" />
         <NodeLayout
-          Size="194.5,42"
-          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Resize CallType"
-          TopLeft="95.5,531.374997360632" />
+          Size="181,42"
+          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Resize Fields"
+          TopLeft="97.5,387.291664742968" />
         <NodeLayout
           Size="223.5,42"
           Id="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallTypeKey)"
@@ -2062,10 +1668,6 @@
           Size="232.5,42"
           Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallTypeKey type"
           TopLeft="68,162.499999192854" />
-        <NodeLayout
-          Size="255,42"
-          Id="Package\DFT - Load into CallChargesPerYear\DER - Error Info (CallChargesPerMin)"
-          TopLeft="506.5,412.374998458351" />
         <NodeLayout
           Size="256.5,42"
           Id="Package\DFT - Load into CallChargesPerYear\OLE_SRC - STA CallChargesPerYear"
@@ -2082,10 +1684,6 @@
           Size="135.5,42"
           Id="Package\DFT - Load into CallChargesPerYear\ALL - Errors"
           TopLeft="853,269.958332528877" />
-        <NodeLayout
-          Size="264,42"
-          Id="Package\DFT - Load into CallChargesPerYear\DCNV - Check CallChargesPerMin type"
-          TopLeft="58.5,412.208331285872" />
         <EdgeLayout
           Id="Package\DFT - Load into CallChargesPerYear.Paths[Union All Output 1]"
           TopLeft="988.5,292.041665856829">
@@ -2100,40 +1698,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="72.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Derived Column Output2]"
-          TopLeft="634,412.374998458351">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="286.75,-100.416665929474"
-              Start="0,0"
-              End="286.75,-92.916665929474">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-46.208332964737" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-46.208332964737"
-                    Point2="0,-50.208332964737"
-                    Point3="4,-50.208332964737" />
-                  <mssgle:LineSegment
-                    End="282.75,-50.208332964737" />
-                  <mssgle:CubicBezierSegment
-                    Point1="282.75,-50.208332964737"
-                    Point2="286.75,-50.208332964737"
-                    Point3="286.75,-54.208332964737" />
-                  <mssgle:LineSegment
-                    End="286.75,-92.916665929474" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2199,7 +1763,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output3]"
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output1]"
           TopLeft="186.375,204.499999192854">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2221,63 +1785,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
-          TopLeft="191.625,573.374997360632">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,73.374999426926"
-              Start="0,0"
-              End="0,65.874999426926">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,65.874999426926" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output1]"
-          TopLeft="191.625,454.208331285872">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,77.1666660747599"
-              Start="0,0"
-              End="0,69.6666660747599">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,69.6666660747599" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output]"
-          TopLeft="189.5,310.124998668208">
+          TopLeft="188.25,429.291664742968">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,102.083332617664"
+              EndConnector="0,72.2916660989737"
               Start="0,0"
-              End="0,94.5833326176637">
+              End="0,64.7916660989737">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,94.5833326176637" />
+                    End="0,64.7916660989737" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2287,7 +1807,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Error Output2]"
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Error Output1]"
           TopLeft="300.5,179.979165877009">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2307,30 +1827,6 @@
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="33.91361328125,5,132.1727734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Error Output1]"
-          TopLeft="322.5,433.291664872111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="184,0"
-              Start="0,0"
-              End="176.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="176.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="22.16361328125,5,132.1727734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2372,6 +1868,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,47.9999995157123" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load into CallChargesPerYear.Paths[Data Conversion Output2]"
+          TopLeft="188.25,310.124998668208">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.1666660747604"
+              Start="0,0"
+              End="0,69.6666660747604">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.6666660747604" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
