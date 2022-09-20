@@ -1,5 +1,5 @@
 # ETL_Group_Project_DSTI_A21
-### SSIS (supposedly) Group Project for Datawarehousing and ETL
+### SSIS Project for Datawarehousing and ETL
 
 The DB scripts to create the Databases and tables are in the <a href="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/tree/main/db_scripts">db_scripts</a> folder.<br>
 <a href="https://github.com/MSebastian2021/ETL_Group_Project_DSTI_A21/tree/main/Data">Data</a> folder contains all the data files provided in Moodle.<br>
